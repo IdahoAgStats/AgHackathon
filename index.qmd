@@ -1,0 +1,27 @@
+---
+pagetitle: "ASA-CSSA-SSSA Agriculture Hackathon"
+page-layout: custom
+section-divs: false
+editor: source
+sidebar: false
+search: false
+description: | 
+  A showcase for data science in action, brought to you by the Royal Statistical Society
+image: images/rwds-logo-150px.png
+---
+
+
+Consider signing up for the Hackathon competition to be held at 2023 Annual Meetings! This is a team competition open to all graduate students across the ASA, CSSA and SSSA. You’re welcome to apply as a team or as a “free agent” in which we will place you in a team.  This competition offers cash prizes of \$400 for first place, \$300 for second place and $200 for third place. These prizes are awarded *per person* regardless of team size. We gratefully acknowledge and thank the Hackathon sponsor who has made this prize money possible, [Syngenta](https://www.syngenta.com/en). 
+
+### Format
+
+The topic will be announced in August. A series of webinars on how to access and retrieve data from public databases relevant to the hackathon topic. At this point, you may begin work on the hackathon. We will provide one opportunity for teams to meet in person at the Annual Meetings and work. Outside of this, teams can meet and work as much as each chooses to. You may participate as a virtual attendee, but you must register for the meetings (presumably as a virtual attendee). Teams will present their findings on the last day of the conference in a 15-minute presentation and will be judged according to a rubric that we will supply in August when we reveal the hackathon topic. 
+
+### 
+
+Teams must be composed of 2 to 4 people. We recommend that you form a team with a variety of domain expertise. Having team member(s) with analytical capabilities (i.e. statistics, machine learning, deep learning) is recommended, but you are not expected to have expertise in any particular programming language or analytical program, nor are you expected to have domain expertise in any particular field. There is room in the competition for people of all abilities, skill sets and agricultural disciplines to contribute. As SAS indicates in their [annual hackathon](https://www.sas.com/sas/events/hackathon.html), “Great ideas can come from anyone, anywhere”. All of that is true, but we will drop this hint: having a soil scientist on your team will be very helpful for this particular challenge. 
+
+### Final thoughts
+
+We aim to make this a valuable educational and professional development opportunity for participants. The webinars themselves will be useful introductions to how to access and retrieve data from several major public databases relevant to agriculture. Additionally, this exercise of working together towards solving the biggest challenges in agriculture mirrors work outside of graduate studies. Our agricultural challenges require inquisitive and creative minds to develop new and effective solutions. We invite you to take up this challenge. 
+

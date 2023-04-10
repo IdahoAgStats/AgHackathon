@@ -1,0 +1,57 @@
+project:
+  type: website
+
+website:
+  title: "2023 Agricultural Hackathon"
+  image: images/AgHackathon_logo.png
+  favicon: images/favicon.png
+  open-graph: true
+  site-url:  idahoagstats.github.io/AgHackathon/ 
+  repo-url: https://github.com/IdahoAgStats/AgHackathon
+  repo-actions: [edit, issue]
+  #google-analytics: "G-1TTWB7YTR6"
+  navbar:
+    background: "949BA6"
+    logo: images/AgHackathon_logo.png
+    logo-alt: "AgHackathon Logo"
+    title: false
+    collapse-below: lg
+    right:
+      - text: topic
+        href: topic.qmd
+      - text: "Schedule"
+        href: schedule.qmd
+      - text: "About"
+        href: about.qmd
+
+
+  page-navigation: true
+
+back-to-top-navigation: false
+
+  page-footer:
+    background: "#000000"
+    left: |
+      need creative commons license here
+    center:  
+      - href: https://github.com/IdahoAgStats/AgHackathon
+        icon: github
+        aria-label: GitHub
+      - href: https://twitter.com/ASA_CSSA_SSSA
+        icon: twitter
+        aria-label: Twitter
+    right: |
+
+format:
+  html:
+    theme: [lux, rwds.scss]
+    css: rwds.css
+    toc: true
+    grid:
+      sidebar-width: 0px
+      body-width: 1000px
+      margin-width: 250px
+
+execute: 
+  freeze: auto
+  

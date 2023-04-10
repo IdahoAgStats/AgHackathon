@@ -1,0 +1,40 @@
+---
+pagetitle: Rules
+title: Hackathon Rules
+subtitle: "......."
+search: false
+---
+
+## The Big Picture
+
+Once the hackathon topic is known, each team can define their target question. This may be the entire topic itself or it may be a smaller aspect of the main topic. Teams will assembly data and conduct an analysis with that data that helps them address the central question they have defined. Each team should summarize their findings and the impact of those findings with respect to their target question. 
+
+
+### Teams
+
+1. Teams must be composed of 2-4 people.
+1. Teams can be composed of people from different institutions. 
+1. All teams members must be graduate students and must be registered for the 2023 ASA-CSSA-SSSA annual meetings. People or teams who are virtual attendees may compete (but each person must be registered for the meetings). 
+1. Teams can be formed independently or you may put your name in as a 'free agent' to be paired with other free agents.
+1. There are no rules on team composition. We recommend a balanced team with regard to domain expertise and skills set. We also recommend that between the team members, there is expertise for (1) data curation, (2) data analysis, and (3) data visualization, but there is flexibility in this realm. Not every single person on the team needs to be accomplished in everything. This is a team competition, after all. 
+
+
+
+### Process
+
+1. Teams are welcome to use any *public* data source to address their target question. We are introducing several data sources in pre-hackathon webinars. Teams are neither penalized nor rewarded for using data sources outside of those we introduce, but these data sources must be public and thus available to everyone. The appropriateness of the data source to the questions each teams focuses on is the most important consideration (see the judging rubric for more information). 
+1. Teams may consult any resources regarding their work, including peer reviewed literature and other professionals in the field. When consulting with individuals, please do not abuse this. Other folks can give insight and advice, but they should not be coding anything, producing any outputs, providing the central ideas, or otherwise acting in a leadership capacity. This is a time for students to shine. 
+1. Students are also welcome to use any statistical software, programming language, data visualization and graphical software they want to accomplish their aims. 
+1. After the topic is unveiled, teams may work on this topic at their discretion from the unveiling up until their final presentation. 
+
+
+### Judging
+
+
+1. Each team will be able to present their final results at the Hackathon oral session to be held Wednesday, November 1 at the annual meeting. Judging will be based on what is presented only.
+1. The only exception to the previous rule is regarding transparency of each team's work. This will be evaluated based on what is placed on a dedicated public git repository on a git cloud hosting service (e.g. [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org). Teams are not required to use git or a git hosting service for collaboration; they are only required to upload their final processes to cloud provider. 
+1. Involving all team members in the final presentation is encouraged, but it is not required. Team balance of the final presentation will have no impact the team score. Teams which do not present automatically forfeit. 
+1. Judging will be conducted by 3-5 experts following an [established rubric]().
+1. Awards will be based on the top 3 point scorers. In the event of ties, the judges will decide through consensus.
+ 
+
