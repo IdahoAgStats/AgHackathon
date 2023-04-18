@@ -7,7 +7,7 @@ search: false
 
 ## Questions? 
 
-[Contact us](mailto:jpiaskowski@uidaho.edu)
+[Contact Julia Piaskowski](mailto:jpiaskowski@uidaho.edu)
 
 
 ### Planning Committee
@@ -22,6 +22,6 @@ Marcia Almeida De Macedo, Syngenta
 
 ### Sponsorship
 
-The 2023 Hackathon was wholly supported by [Syngenta](https://www.syngenta.com/en)! 
+The 2023 Hackathon is supported by [Syngenta Seeds](https://www.syngenta.com/en/seeds). 
 
-*(add in syngenta logo?)* 
+![](images/Picture4.png){fig-alt="Syngenta Logo" fig-align="center" width=35%}

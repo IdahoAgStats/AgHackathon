@@ -11,14 +11,16 @@ website:
   repo-actions: [edit, issue]
   #google-analytics: "G-1TTWB7YTR6"
   navbar:
-    background: "949BA6"
+    background: "#F4F4EC"
     logo: images/AgHackathon_logo.png
     logo-alt: "AgHackathon Logo"
     title: false
     collapse-below: lg
     right:
-      - text: topic
+      - text: Topic
         href: topic.qmd
+      - text: Rules
+        href: rules.qmd
       - text: "Schedule"
         href: schedule.qmd
       - text: "About"
@@ -31,15 +33,12 @@ back-to-top-navigation: false
 
   page-footer:
     background: "#000000"
-    left: |
-      need creative commons license here
-    center:  
-      - href: https://github.com/IdahoAgStats/AgHackathon
-        icon: github
-        aria-label: GitHub
-      - href: https://twitter.com/ASA_CSSA_SSSA
-        icon: twitter
-        aria-label: Twitter
+    left: 
+        - href: https://github.com/IdahoAgStats/AgHackathon
+          icon: github
+          aria-label: GitHub
+    center:  |
+    [![](https://github.com/IdahoAgStats/r-for-ag-scientists/raw/main/images/UI_Main_horizontal_4c.png){fig-alt="ASA-CSSA-SSSA 2023 Meetings Logo" width=200px}](https://www.acsmeetings.org/)
     right: |
 
 format:

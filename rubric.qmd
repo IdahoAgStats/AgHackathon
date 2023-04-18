@@ -1,0 +1,10 @@
+---
+pagetitle: rubric
+title: Judging Rubric
+subtitle: ""
+search: false
+---
+
+#### *TBA*
+
+*(seriously, this is almost done)*
