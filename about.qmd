@@ -5,6 +5,12 @@ subtitle: "About Us"
 search: false
 ---
 
+::: {.header-block}
+
+### Sponsorship
+
+The 2023 Agricultural Hackathon is planned by the [ASA Biometry and Statistical Computing Section](https://www.agronomy.org/membership/sections-communities/biometry-and-statistical-computing/) and generously sponsored by [Syngenta Seeds](https://www.syngenta.com/en/seeds). 
+
 
 ### Planning Committee
 
@@ -17,14 +23,12 @@ Dylan Beaudette, NRCS
 Marcia Almeida De Macedo, Syngenta  
 
 
-### Sponsorship
+::: {.content-container}
+::: {.pullout-block} 
+::: {.button .button2}
+[Contact](mailto:jpiaskowski@uidaho.edu?subject=Ag Hackathon)
+:::
+:::
+:::
 
-
-The 2023 Hackathon is supported by [Syngenta Seeds](https://www.syngenta.com/en/seeds). 
-
-![](images/Picture4.png){fig-alt="Syngenta Logo" fig-align="center" width=35%}
-
-### Questions? 
-
-
-[Contact Julia Piaskowski](mailto:jpiaskowski@uidaho.edu)
+:::

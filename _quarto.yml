@@ -16,15 +16,15 @@ website:
   #google-analytics: "G-1TTWB7YTR6"
   navbar:
     background: "#F4F4EC"
-    logo: images/AgHackathon_logo.png
+    logo: images/hackathon_header.png
     logo-alt: "AgHackathon Logo"
     title: false
     collapse-below: lg
     right:
       - text: "Topic"
         href: topic.qmd
-      - text: "Rules"
-        href: rules.qmd
+      - text: "Guidelines"
+        href: guidelines.qmd
       - text: "Schedule"
         href: schedule.qmd
       - text: "About"
@@ -36,14 +36,12 @@ website:
 
   page-footer:
     background: "#aba96d"
-    left: 
-        - href: https://github.com/IdahoAgStats/AgHackathon
-          icon: github
-          aria-label: GitHub
+    left:    |
+      [![]( https://github.com/IdahoAgStats/AgHackathon/raw/main/images/open_science_logo.png){width=200px}](https://github.com/IdahoAgStats/AgHackathon)
     center:  |
-      [![](https://github.com/IdahoAgStats/AgHackathon/blob/main/images/open_science_logo.png){fig-alt="ASA-CSSA-SSSA 2023 Meetings Logo" width=200px}](https://www.acsmeetings.org/)
+      [![]( https://github.com/IdahoAgStats/AgHackathon/raw/main/images/open_science_logo.png){width=300px}](https://www.acsmeetings.org/)
     right: |
-      [![](https://github.com/IdahoAgStats/AgHackathon/blob/main/images/syngenta_logo_transparent.png){fig-alt="Syngenta Seeds Logo" width=200px}](https://www.acsmeetings.org/)
+      [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/syngenta_logo_transparent.png){fig-alt="Syngenta Seeds Logo" width=250px}](https://www.syngenta-us.com/seed/)
     
 format:
   html:

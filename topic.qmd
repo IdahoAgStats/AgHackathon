@@ -5,7 +5,6 @@ subtitle: "The Central Organizing Question"
 search: false
 ---
 
-### *TBA*
 
 The central topic will be unveiled to all Hackathon participants September 01, 2023. 
 
