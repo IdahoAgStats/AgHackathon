@@ -1,11 +1,12 @@
 ---
 pagetitle: Topic
 title: Hackathon Topic
-subtitle: "The central Organizing question"
+subtitle: "The Central Organizing Question"
 search: false
 ---
 
+### *TBA*
 
-The central topic will be unveiled to all registrants September 1, 2023. 
+The central topic will be unveiled to all Hackathon participants September 01, 2023. 
 
-
+This question will address an issue important to agricultural sustainability. Keeping with the annual meeting theme of "Open Science Inspires", the topic will involve accessing and leveraging public data sets. 

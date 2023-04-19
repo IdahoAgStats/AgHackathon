@@ -6,18 +6,6 @@ search: false
 ---
 
 
-|----------|------------------------------------|
-| March 07 - August 31 | Sign ups open for Hackathon. Signup closes August 31st, midnight (U.S. Pacific Time Zone). |
-| September 01  | Hackathon Topic Announced  |
-| September 05/07 | Webinars on how to access data |
-| October 29  | Participant Meeting and Working Session in Annual Meetings in St. Louis, Missouri |
-| October 31 | 5-minute flash talks | 
-| November 2 | Final Hackathon presentations \n
-Winners will be announced at the closing reception |
-|------------|----------------------------------|
-
-
-
 #### March 07 - August 31  
 
 Sign up for Hackathon. Signup is open until August 31st, midnight (U.S. Pacific Time Zone).

@@ -1,7 +1,7 @@
 ---
 pagetitle: Rules
 title: Hackathon Rules
-subtitle: "......."
+subtitle: "Process and Rules"
 search: false
 ---
 

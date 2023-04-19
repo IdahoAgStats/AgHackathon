@@ -1,5 +1,9 @@
 project:
   type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "!internal/"
 
 website:
   title: "2023 Agricultural Hackathon"
@@ -7,8 +11,8 @@ website:
   favicon: images/favicon.png
   open-graph: true
   site-url:  idahoagstats.github.io/AgHackathon/ 
-  repo-url: https://github.com/IdahoAgStats/AgHackathon
-  repo-actions: [edit, issue]
+  #repo-url: https://github.com/IdahoAgStats/AgHackathon
+  #repo-actions: [edit, issue]
   #google-analytics: "G-1TTWB7YTR6"
   navbar:
     background: "#F4F4EC"
@@ -17,30 +21,30 @@ website:
     title: false
     collapse-below: lg
     right:
-      - text: Topic
+      - text: "Topic"
         href: topic.qmd
-      - text: Rules
+      - text: "Rules"
         href: rules.qmd
       - text: "Schedule"
         href: schedule.qmd
       - text: "About"
         href: about.qmd
-
-
+        
   page-navigation: true
 
-back-to-top-navigation: false
+  #back-to-top-navigation: false
 
   page-footer:
-    background: "#000000"
+    background: "#aba96d"
     left: 
         - href: https://github.com/IdahoAgStats/AgHackathon
           icon: github
           aria-label: GitHub
     center:  |
-    [![](https://github.com/IdahoAgStats/r-for-ag-scientists/raw/main/images/UI_Main_horizontal_4c.png){fig-alt="ASA-CSSA-SSSA 2023 Meetings Logo" width=200px}](https://www.acsmeetings.org/)
+      [![](https://github.com/IdahoAgStats/AgHackathon/blob/main/images/open_science_logo.png){fig-alt="ASA-CSSA-SSSA 2023 Meetings Logo" width=200px}](https://www.acsmeetings.org/)
     right: |
-
+      [![](https://github.com/IdahoAgStats/AgHackathon/blob/main/images/syngenta_logo_transparent.png){fig-alt="Syngenta Seeds Logo" width=200px}](https://www.acsmeetings.org/)
+    
 format:
   html:
     theme: [lux, rwds.scss]
