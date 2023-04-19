@@ -871,3 +871,32 @@ body:not(.floating) .nav-footer {
   margin-right: auto;
   width: 200px;
 }
+
+/*-- extra --*/
+
+.messy-purple-box {
+  padding: 0.5em 0.5em 0em 3em;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  background: #e3b638 3px center/3em no-repeat;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background-size: 2em;
+  background-position: 0.5em 0.5em;
+}
+
+.callout-purple {
+  border-left-color: #939bc9 !important;
+  border-top: 2px solid #939bc9 !important;
+  border-bottom: 2px solid #939bc9 !important;
+  background-color:  #f0eeeb !important;
+  border-block-color:  #CACFEA !important;
+}
+
+.callout-purple .callout-header {
+  background-color: #CACFEA !important;
+}
+
+.callout-purple .callout-icon::before {
+  background-image: unset !important;
+}

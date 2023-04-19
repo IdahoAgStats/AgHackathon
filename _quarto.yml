@@ -23,8 +23,8 @@ website:
     right:
       - text: "Topic"
         href: topic.qmd
-      - text: "Guidelines"
-        href: guidelines.qmd
+      - text: "Rules"
+        href: rules.qmd
       - text: "Schedule"
         href: schedule.qmd
       - text: "About"
@@ -37,9 +37,9 @@ website:
   page-footer:
     background: "#aba96d"
     left:    |
-      [![]( https://github.com/IdahoAgStats/AgHackathon/raw/main/images/open_science_logo.png){width=200px}](https://github.com/IdahoAgStats/AgHackathon)
+      [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/github-mark-white.png){width=70px}](https://github.com/IdahoAgStats/AgHackathon)
     center:  |
-      [![]( https://github.com/IdahoAgStats/AgHackathon/raw/main/images/open_science_logo.png){width=300px}](https://www.acsmeetings.org/)
+      [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/open_science_logo.png){width=300px}](https://www.acsmeetings.org/)
     right: |
       [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/syngenta_logo_transparent.png){fig-alt="Syngenta Seeds Logo" width=250px}](https://www.syngenta-us.com/seed/)
     
