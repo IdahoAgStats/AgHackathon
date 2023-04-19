@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>idahoagstats.github.io/AgHackathon/about.html</loc>
+    <lastmod>2023-04-19T22:48:59.675Z</lastmod>
+  </url>
+  <url>
     <loc>idahoagstats.github.io/AgHackathon/index.html</loc>
-    <lastmod>2023-04-19T22:15:24.690Z</lastmod>
+    <lastmod>2023-04-19T22:49:00.163Z</lastmod>
   </url>
   <url>
     <loc>idahoagstats.github.io/AgHackathon/rubric.html</loc>
-    <lastmod>2023-04-19T16:15:05.711Z</lastmod>
+    <lastmod>2023-04-19T22:49:00.535Z</lastmod>
   </url>
   <url>
     <loc>idahoagstats.github.io/AgHackathon/rules.html</loc>
-    <lastmod>2023-04-19T22:14:26.583Z</lastmod>
+    <lastmod>2023-04-19T22:49:00.913Z</lastmod>
   </url>
   <url>
     <loc>idahoagstats.github.io/AgHackathon/schedule.html</loc>
-    <lastmod>2023-04-19T22:14:27.548Z</lastmod>
+    <lastmod>2023-04-19T22:49:01.252Z</lastmod>
   </url>
   <url>
     <loc>idahoagstats.github.io/AgHackathon/topic.html</loc>
-    <lastmod>2023-04-19T22:14:20.403Z</lastmod>
-  </url>
-  <url>
-    <loc>idahoagstats.github.io/AgHackathon/about.html</loc>
-    <lastmod>2023-04-19T21:22:13.559Z</lastmod>
-  </url>
-  <url>
-    <loc>idahoagstats.github.io/AgHackathon/guidelines.html</loc>
-    <lastmod>2023-04-19T21:25:24.276Z</lastmod>
+    <lastmod>2023-04-19T22:49:01.558Z</lastmod>
   </url>
 </urlset>
