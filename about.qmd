@@ -9,7 +9,7 @@ search: false
 
 ### Sponsorship
 
-The 2023 Agricultural Hackathon is planned by the [ASA Biometry and Statistical Computing Section](https://www.agronomy.org/membership/sections-communities/biometry-and-statistical-computing/) and generously sponsored by [Syngenta Seeds](https://www.syngenta.com/en/seeds). 
+The 2023 Agricultural Hackathon was planned by the [ASA Biometry and Statistical Computing Section](https://www.agronomy.org/membership/sections-communities/biometry-and-statistical-computing/) and generously sponsored by [Syngenta Seeds](https://www.syngenta.com/en/seeds). 
 
 
 ### Planning Committee
