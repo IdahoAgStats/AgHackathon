@@ -12,7 +12,7 @@ search: false
 ::: {.header-block}
 ::: {.pullout-block} 
 ::: {.button .button2}
-[Register Here](https://docs.google.com/forms/d/e/1FAIpQLSeys2dgnkU-nnDe0ugtLVRSranSPa5mFAixZhxeiJSFAwDrqQ/viewform?usp=sf_link)
+[Register Here](signup.qmd)
 :::
 :::
 
@@ -44,8 +44,6 @@ As mentioned, this is a team competition for graduate students. You’re welcome
 ![](images/quote-purple.png){width="100px"}
 
 ## Great ideas can come from anyone, anywhere.
-
-SAS Hackathon
 
 :::
 :::

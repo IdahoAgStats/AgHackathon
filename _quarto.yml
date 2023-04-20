@@ -27,6 +27,8 @@ website:
         href: rules.qmd
       - text: "Schedule"
         href: schedule.qmd
+      - text: "Register"
+        href: signup.qmd
       - text: "About"
         href: about.qmd
         
@@ -39,9 +41,9 @@ website:
     left:    |
       [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/github-mark-white.png){width=70px}](https://github.com/IdahoAgStats/AgHackathon)
     center:  |
-      [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/open_science_logo.png){width=300px}](https://www.acsmeetings.org/)
+      [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/open_science_logo.png){width=250px}](https://www.acsmeetings.org/)
     right: |
-      [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/syngenta_logo_transparent.png){fig-alt="Syngenta Seeds Logo" width=250px}](https://www.syngenta-us.com/seed/)
+      [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/syngenta_logo_transparent.png){fig-alt="Syngenta Seeds Logo" width=200px}](https://www.syngenta-us.com/seed/)
     
 format:
   html:

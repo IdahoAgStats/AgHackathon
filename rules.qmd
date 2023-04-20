@@ -22,7 +22,7 @@ Once the hackathon topic is known, each team should define their target question
 
 1. There are no rules on team composition. We recommend a balanced team with regard to domain expertise and skills set. We also recommend that between the team members, there is expertise for (1) data curation, (2) data analysis, and (3) data visualization, but there is flexibility in this realm. Not every single person on the team needs to be accomplished in everything. This is a team competition, after all. 
 
-1. All team members must [sign up](https://docs.google.com/forms/d/e/1FAIpQLSeys2dgnkU-nnDe0ugtLVRSranSPa5mFAixZhxeiJSFAwDrqQ/viewform?usp=sf_link) by the deadline: August 31, 2023, midnight (Pacific Time Zone). 
+1. All team members must [register](signup.qmd) by the deadline: August 31, 2023, midnight (Pacific Time Zone). 
 
 
 ## Process
