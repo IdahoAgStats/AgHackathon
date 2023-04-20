@@ -49,7 +49,6 @@ jobs:
       - name: Build site 🔧
         run: |
           quarto render
-# R -e 'quarto::quarto_render(".", as_job = FALSE)'
           
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
@@ -57,3 +56,4 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: _site # The folder the action should deploy.
+          
