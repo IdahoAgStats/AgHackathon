@@ -6,7 +6,7 @@ search: false
 ---
 
 
-#### March 07 - August 31  
+#### April 24 - August 31  
 
 [Sign up](https://docs.google.com/forms/d/e/1FAIpQLSeys2dgnkU-nnDe0ugtLVRSranSPa5mFAixZhxeiJSFAwDrqQ/viewform?usp=sf_link) for Hackathon. Sign-up is open until August 31st, midnight (U.S. Pacific Time Zone).
 
