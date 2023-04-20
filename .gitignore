@@ -41,5 +41,5 @@ vignettes/*.pdf
 
 # quarto site 
 /.quarto/ 
-/_site
+/_site/
 
