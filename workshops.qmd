@@ -1,0 +1,11 @@
+---
+pagetitle: workshops
+title: Workshops
+subtitle: "Webinars on accessing public databases"
+search: false
+---
+
+
+The workshop details will be unveiled September 01, 2023, along with the Hackathon topic. Since the Meeting theme is "Open Science Inspires", we will provide training materials and live webinars on how to access public data sources that are relevant to the Hackathon Topic. 
+
+Workshops will be held online the week of September 04.

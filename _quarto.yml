@@ -23,10 +23,16 @@ website:
     right:
       - text: "Topic"
         href: topic.qmd
-      - text: "Rules"
-        href: rules.qmd
-      - text: "Schedule"
-        href: schedule.qmd
+      - text: "Workshops"
+        href: workshops.qmd
+      - text: "Competition"
+        menu: 
+        - text: "Schedule"
+          href: schedule.qmd
+        - text: "Rules"
+          href: rules.qmd
+        - text: "rubric"
+          href: rubric.qmd
       - text: "Register"
         href: signup.qmd
       - text: "About"
