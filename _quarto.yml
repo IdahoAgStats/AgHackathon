@@ -14,7 +14,7 @@ website:
   site-url:  idahoagstats.github.io/AgHackathon/ 
   #repo-url: https://github.com/IdahoAgStats/AgHackathon
   #repo-actions: [edit, issue]
-  #google-analytics: "G-1TTWB7YTR6"
+  google-analytics: "G-ZZST40VXE1"
   navbar:
     background: "#F4F4EC"
     logo: images/hackathon_header.png
