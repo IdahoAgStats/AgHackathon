@@ -4,4 +4,4 @@ Home to the 2023 AgHackathon to be held at the[ Annual Meetings](https://www.acs
 
 Oct 29 - Nov 1
 
-![](images/AgHackathon_logo.png){width=250px}
+<img src="images/AgHackathon_logo.png"  width="30%" height="30%">
