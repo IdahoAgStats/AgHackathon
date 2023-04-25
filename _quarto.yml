@@ -18,7 +18,6 @@ website:
   navbar:
     background: "#F4F4EC"
     logo: images/hackathon_header.png
-    logo-alt: "AgHackathon Logo"
     title: false
     collapse-below: lg
     right:
@@ -46,11 +45,11 @@ website:
   page-footer:
     background: "#aba96d"
     left:    |
-      [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/github-mark-white.png){width=70px}](https://github.com/IdahoAgStats/AgHackathon)
+      [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/github-mark-white.png){width=70px}](https://github.com/IdahoAgStats/AgHackathon){target="_blank"}
     center:  |
-      [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/open_science_logo.png){width=250px}](https://www.acsmeetings.org/)
+      [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/open_science_logo.png){width=250px}](https://www.acsmeetings.org/){target="_blank"}
     right: |
-      [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/syngenta_logo_transparent.png){fig-alt="Syngenta Seeds Logo" width=200px}](https://www.syngenta-us.com/seed/)
+      [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/syngenta_logo_transparent.png){fig-alt="Syngenta Seeds Logo" width=200px}](https://www.syngenta-us.com/seed/){target="_blank"}
     
 format:
   html:

@@ -40,7 +40,7 @@ Once the hackathon topic is known, each team should define their target question
 
 1. Each team will be able to present their final results at the Hackathon oral session to be held Wednesday, November 1 at the annual meeting. Judging will be based on what is presented only.
 
-1. The only exception to the previous rule is regarding transparency of each team's work. This will be evaluated based on what is placed on a dedicated public git repository on a git cloud hosting service (e.g. [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org)). Teams are not required to use git or a git hosting service for collaboration; they are only required to upload their final processes to public git hosting service. 
+1. The only exception to the previous rule is regarding transparency of each team's work. This will be evaluated based on what is placed on a dedicated public git repository on a git cloud hosting service (e.g. [GitHub](https://github.com/){target="_blank"}, [GitLab](https://about.gitlab.com/){target="_blank"}, [Bitbucket](https://bitbucket.org){target="_blank"}). Teams are not required to use git or a git hosting service for collaboration; they are only required to upload their final processes to public git hosting service. 
 
 1. Involving all team members in the final presentation is encouraged, but it is not required. Team balance of the final presentation will have no impact the team score. Teams which do not present automatically forfeit. 
 

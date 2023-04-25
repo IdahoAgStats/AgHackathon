@@ -19,9 +19,9 @@ twitter-card:
 :::
 
 
-Registration is now open for the Agricultural Hackathon competition to be held at [2023 Annual Meetings of the ASA-CSSA-SSSA](https://www.acsmeetings.org/) in St. Louis, Missouri. We invite you to sign up to work together towards solving the biggest challenges in agriculture. Our agricultural challenges require inquisitive and creative minds to develop new and effective solutions. We invite you to take up this challenge. 
+Registration is now open for the Agricultural Hackathon competition to be held at [2023 Annual Meetings of the ASA-CSSA-SSSA](https://www.acsmeetings.org/){target="_blank"} in St. Louis, Missouri. We invite you to sign up to work together towards solving the biggest challenges in agriculture. Our agricultural challenges require inquisitive and creative minds to develop new and effective solutions. We invite you to take up this challenge. 
 
-This is a team competition open to all graduate students across the ASA, CSSA and SSSA. This competition offers cash prizes of \$400 for first place, \$300 for second place and $200 for third place. These prizes are awarded *per person* regardless of team size. We gratefully acknowledge and thank the Hackathon sponsor who has made this prize money possible, [Syngenta Seeds](https://www.syngenta.com/en).
+This is a team competition open to all graduate students across the ASA, CSSA and SSSA. This competition offers cash prizes of \$400 for first place, \$300 for second place and $200 for third place. These prizes are awarded *per person* regardless of team size. We gratefully acknowledge and thank the Hackathon sponsor who has made this prize money possible, [Syngenta Seeds](https://www.syngenta.com/en){target="_blank"}.
 
 :::
 
