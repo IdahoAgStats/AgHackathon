@@ -15,8 +15,8 @@ The 2023 Agricultural Hackathon was planned by the [ASA Biometry and Statistical
 ### Planning Committee
 
 
-Julia Piaskowski, University of Idaho  
-Leo Bastos, University of Georgia   
+[Julia Piaskowski](https://agstats.io/), University of Idaho  
+[Leo Bastos](https://leombastos.github.io/bastoslab/), University of Georgia   
 Adrian Correndo, Kansas State University  
 Shelly Hunt, SAS  
 Dylan Beaudette, NRCS   
