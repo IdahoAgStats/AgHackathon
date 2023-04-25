@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Sponsorship\nThe 2023 Agricultural Hackathon was planned by the ASA Biometry and Statistical Computing Section and generously sponsored by Syngenta Seeds.\n\n\nPlanning Committee\nJulia Piaskowski, University of Idaho\nLeo Bastos, University of Georgia\nAdrian Correndo, Kansas State University\nShelly Hunt, SAS\nDylan Beaudette, NRCS\nMarcia Almeida De Macedo, Syngenta\n\n\n\nContact"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "2023 ASA-CSSA-SSSA Agriculture Hackathon",
+    "section": "",
+    "text": "Register Here\n\n\nRegistration is now open for the Agricultural Hackathon competition to be held at 2023 Annual Meetings of the ASA-CSSA-SSSA in St. Louis, Missouri. We invite you to sign up to work together towards solving the biggest challenges in agriculture. Our agricultural challenges require inquisitive and creative minds to develop new and effective solutions. We invite you to take up this challenge.\nThis is a team competition open to all graduate students across the ASA, CSSA and SSSA. This competition offers cash prizes of $400 for first place, $300 for second place and $200 for third place. These prizes are awarded per person regardless of team size. We gratefully acknowledge and thank the Hackathon sponsor who has made this prize money possible, Syngenta Seeds."
+  },
+  {
+    "objectID": "index.html#great-ideas-can-come-from-anyone-anywhere.",
+    "href": "index.html#great-ideas-can-come-from-anyone-anywhere.",
+    "title": "2023 ASA-CSSA-SSSA Agriculture Hackathon",
+    "section": "Great ideas can come from anyone, anywhere.",
+    "text": "Great ideas can come from anyone, anywhere."
+  },
+  {
+    "objectID": "rubric.html",
+    "href": "rubric.html",
+    "title": "Judging Rubric",
+    "section": "",
+    "text": "TBA\n(seriously, this is almost done)"
+  },
+  {
+    "objectID": "rules.html",
+    "href": "rules.html",
+    "title": "Hackathon Guidelines",
+    "section": "",
+    "text": "Once the hackathon topic is known, each team should define their target question. This may be the entire topic itself or it may be a smaller aspect of the main topic, but it needs to fit within the umbrella topic. Teams will assembly data and conduct an analysis with that data that helps them address the central question they have defined. Each team should summarize their findings and the impact of those findings with respect to their target question."
+  },
+  {
+    "objectID": "rules.html#the-big-picture",
+    "href": "rules.html#the-big-picture",
+    "title": "Hackathon Guidelines",
+    "section": "",
+    "text": "Once the hackathon topic is known, each team should define their target question. This may be the entire topic itself or it may be a smaller aspect of the main topic, but it needs to fit within the umbrella topic. Teams will assembly data and conduct an analysis with that data that helps them address the central question they have defined. Each team should summarize their findings and the impact of those findings with respect to their target question."
+  },
+  {
+    "objectID": "rules.html#teams",
+    "href": "rules.html#teams",
+    "title": "Hackathon Guidelines",
+    "section": "Teams",
+    "text": "Teams\n\nTeams must be composed of 2 to 4 graduate students.\nTeams can be composed of people from different institutions or from the same institution.\nAll teams members must be graduate students and must be registered for the 2023 ASA-CSSA-SSSA annual meetings. People or teams who are virtual attendees may compete (but each person must be registered for the meetings).\nTeams can be formed independently or you may put your name in as a ‘free agent’ to be paired with other free agents.\nThere are no rules on team composition. We recommend a balanced team with regard to domain expertise and skills set. We also recommend that between the team members, there is expertise for (1) data curation, (2) data analysis, and (3) data visualization, but there is flexibility in this realm. Not every single person on the team needs to be accomplished in everything. This is a team competition, after all.\nAll team members must register by the deadline: August 31, 2023, midnight (Pacific Time Zone)."
+  },
+  {
+    "objectID": "rules.html#process",
+    "href": "rules.html#process",
+    "title": "Hackathon Guidelines",
+    "section": "Process",
+    "text": "Process\n\nTeams are welcome to use any public data source to address their target question. We are introducing several public data sources in pre-hackathon webinars. Teams are neither penalized nor rewarded for using data sources outside of those we introduce, but these data sources must be available to everyone. If data are behind a paywall, they are not available sufficiently public for this competition. Data requiring an permissions such as API key are public so long as this is a free resource that anyone can obtain. The appropriateness of the data source to the questions each teams focuses on is part of the judging criteria (see the judging rubric for more information).\nTeams may consult any resources regarding their work, including peer reviewed literature and other professionals in the field. When consulting with individuals, please do not abuse this. Other folks can give insight and advice, but they should not be coding anything, producing any outputs, providing the central ideas, or otherwise acting in a leadership capacity. This is a time for students to shine.\nStudents are also welcome to use any statistical software, programming language, data visualization and graphical software they want to accomplish their aims.\nAfter the topic is unveiled, teams may work on this topic at their discretion from the unveiling up until their final presentation."
+  },
+  {
+    "objectID": "rules.html#judging",
+    "href": "rules.html#judging",
+    "title": "Hackathon Guidelines",
+    "section": "Judging",
+    "text": "Judging\n\nEach team will be able to present their final results at the Hackathon oral session to be held Wednesday, November 1 at the annual meeting. Judging will be based on what is presented only.\nThe only exception to the previous rule is regarding transparency of each team’s work. This will be evaluated based on what is placed on a dedicated public git repository on a git cloud hosting service (e.g. GitHub, GitLab, Bitbucket). Teams are not required to use git or a git hosting service for collaboration; they are only required to upload their final processes to public git hosting service.\nInvolving all team members in the final presentation is encouraged, but it is not required. Team balance of the final presentation will have no impact the team score. Teams which do not present automatically forfeit.\nJudging will be conducted by 3 to 5 experts following the judging rubric.\nAwards will be based on the top 3 point scorers. In the event of ties, the judges will decide through consensus."
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "April 24 - August 31\nSign up for Hackathon. Sign-up is open until August 31st, midnight (U.S. Pacific Time Zone).\n\n\nSeptember 01\nHackathon topic announced\n\n\nSeptember 05/07\nHackathon webinars are held\n\n\nOctober 29\nParticipant meeting and working session at Annual Meetings in St. Louis, Missouri\n\n\nNovember 02\nFinal Hackathon presentations\nWinners will be announced at the closing reception"
+  },
+  {
+    "objectID": "topic.html",
+    "href": "topic.html",
+    "title": "Hackathon Topic",
+    "section": "",
+    "text": "The central topic will be unveiled to all Hackathon participants September 01, 2023.\nKeeping with the annual meeting theme of “Open Science Inspires”, the topic will leverage public data sets and data transparency to address current agricultual challenges.\n\n\n\n\n\n\nHint\n\n\n\n\n\nIncluding a soil scientist on your team will be helpful for the 2023 Hackathon topic."
+  },
+  {
+    "objectID": "workshops.html",
+    "href": "workshops.html",
+    "title": "Workshops",
+    "section": "",
+    "text": "The workshop details will be unveiled September 01, 2023, along with the Hackathon topic. Since the Meeting theme is “Open Science Inspires”, we will provide training materials and live webinars on how to access public data sources that are relevant to the Hackathon topic.\nWorkshops will be held online the week of September 04."
+  }
+]
