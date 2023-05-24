@@ -879,7 +879,7 @@ body:not(.floating) .nav-footer {
   border-top: 2px solid #939bc9 !important;
   border-bottom: 2px solid #939bc9 !important;
   background-color:  #f0eeeb !important;
-  border-block-color:  #CACFEA !important;
+  /*border-block-color:  #CACFEA !important;*/
 }
 
 .callout-purple .callout-header {

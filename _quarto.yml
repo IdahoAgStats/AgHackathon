@@ -54,7 +54,7 @@ website:
     
 format:
   html:
-    theme: [lux, rwds.scss]
+    theme: [rwds.scss, lux]
     css: rwds.css
     toc: true
     grid:
