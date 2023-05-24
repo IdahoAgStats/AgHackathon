@@ -5,14 +5,16 @@ subtitle: ""
 search: false
 ---
 
-Each team's score will be the sum of their result for each category, and summed across judges. 
+Below is the judging rubric for the competition. The majority of the judging will considers only what is provided in the final presentation on November 2nd. The only exception to this is the final section on "Open Data Principles". 
+
+Each team's score will be the sum of their results for each category, and summed across judges. The three highest scoring teams win. If ties occur, the judges will decide these ties via consensus. 
 
 ### The Categories
 
 ::: {.callout-tip .callout-purple collapse="true"}
 ## Problem Definition
 
-*Is a problem statement is well defined and within the scope of the Hackathon topic?*
+*Is a problem statement defined and within the scope of the Hackathon topic?*
 
 
 |Score    |   Meaning   |
@@ -46,17 +48,16 @@ Each team's score will be the sum of their result for each category, and summed 
 ::: {.callout-tip .callout-purple collapse="true"}
 ## Analytical Methods
 
-*What approaches were used, are all relevant details adequately described, ans are the methods used appropriate for the addressing the problem? Is this a novel approach to addressing the team problem statement?*
+*What approaches were used, are all relevant details adequately described, and are the methods used appropriate for the addressing the problem? Is this a novel approach to addressing the team problem statement?*
 
 |Score    |   Meaning   |
 |-----|--------------------|
 | 0  | Not stated in presentation. |    
 | 1  | Mentioned vaguely but not enough to fully understand. |            
-| 2  | The analytical approaches are mentioned and described in some detail, but overall,it is lacking.|        
+| 2  | The analytical approaches are mentioned and described in some detail, but overall, it is lacking.|        
 | 3  | The bare minimum was done to meet this requirement.  |        
 | 4  | Largely defined, with some but minimal information missing.  |        
-| 5  | The approaches are clearly stated in sufficient details to understand what was done, and t
-he approach is highly innovative. | 
+| 5  | The approaches are clearly stated in sufficient details to understand what was done, and the approach is highly innovative. | 
 
 :::
 
@@ -72,7 +73,7 @@ he approach is highly innovative. |
 | 2  | Results are mentioned and described in some detail, but overall, this is lacking.|        
 | 3  | The bare minimum was done to meet this requirement.  |        
 | 4  | Largely provided, with some missed opportunities in providing supporting results.  |        
-| 5  | The results were correctely interpreted and used appropriately. When applicable, model assumptions or model fit was evaluated. Limitations to the results are acknowledged.  | 
+| 5  | The results were correctly interpreted and used appropriately. When applicable, model assumptions or model fit was evaluated. Limitations to the results are addressed.  | 
 
 :::
 
@@ -87,8 +88,8 @@ he approach is highly innovative. |
 | 1  | Mentioned vaguely but not enough to fully understand. |            
 | 2  | Impacts are mentioned and described in some detail, but overall, this is lacking.|        
 | 3  | The bare minimum was done to meet this requirement.  |        
-| 4  | The impacts arev largely stated, with some minor omissions and/or lack of details to understand.  |        
-| 5  | The team clearly defines how their results can be used the agricultural industry (or adjacent industry) or will impact the target populations. How these results apply to the the choosen problem scope is stated or unambiguously evident.  | 
+| 4  | The impacts are largely stated, with some minor omissions and/or lack of details to understand.  |        
+| 5  | The team clearly defines how their results can be used the agricultural industry (or adjacent industry) or will impact the target populations. How these results apply to the the problem scope is stated or unambiguously evident.  | 
 
 :::
 
@@ -101,7 +102,7 @@ he approach is highly innovative. |
 
 |Score    |   Meaning   |
 |-----|--------------------|
-| ~~0~~  | *(not an option - failure to give a presentation is equal to forfeiture)*  |
+| ~~0~~  | *(not an option - failure to give a presentation is equal to forfeiture of the competition)*  |
 | 1  |Excessively short presentations or otherwise inadequate to explain what the team accomplished. |
 | 2  | Presentation included the basics of what the team accomplished, but there were large leaps in logic that were hard to follow.  |
 | 3  | A decent, average presentation.      |
@@ -109,8 +110,9 @@ he approach is highly innovative. |
 | 5  | The presentation followed a logical structure, felt like a narrative telling the story for problem to proposed solutions. Team members were enthusiastic and/or engaging, the visualizations were compelling, support the conclusions well, and overall strengthen the presentation.   |
 
 **Important!!**  
-  - If a team presentation is not given, the team forfeits the competition. 
-  - Involving all team members in the presentation is encouraged, but it is not required. Team balance of the final presentation will have no impact the team score. 
+
+* If a team presentation is not given, the team forfeits the competition.         
+* Involving all team members in the presentation is encouraged, but it is not required. Team balance of the final presentation will have no impact the team score. 
   
 :::
 
@@ -123,7 +125,7 @@ he approach is highly innovative. |
 |Score    |   Meaning   |
 |-----|--------------------|
 | 0  | There is no public git repository.  |
-| 1  | A public git repository exists, nothing substantive is in it.  |
+| 1  | A public git repository exists, but nothing substantive is in it.  |
 | 2  | Some code is present in the repository, but it is highly incomplete.  |
 | 3  | Code for data import and analysis are present in the repository.  |
 | 4  | Code for data import, data curation and analysis files are present in the repository. |

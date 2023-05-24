@@ -49,6 +49,7 @@ website:
     center:  |
       [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/open_science_logo.png){width=250px}](https://www.acsmeetings.org/){target="_blank"}
     right: |
+      [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/john_deere_logo.png){fig-alt="John Deere Logo" width=200px}](https://www.deere.com/en/){target="_blank"}
       [![](https://github.com/IdahoAgStats/AgHackathon/raw/main/images/syngenta_logo_transparent.png){fig-alt="Syngenta Seeds Logo" width=200px}](https://www.syngenta-us.com/seed/){target="_blank"}
     
 format:
