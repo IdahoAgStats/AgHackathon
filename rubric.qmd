@@ -7,7 +7,7 @@ search: false
 
 Below is the judging rubric for the competition. The majority of the judging will considers only what is provided in the final presentation on November 2nd. The only exception to this is the final section on "Open Data Principles". 
 
-Each team's score will be the sum of their results for each category, and summed across judges. The three highest scoring teams win. If ties occur, the judges will decide these ties via consensus. 
+Each team's score will be the sum of their results for each category, and summed across judges. The three highest scoring teams win. If ties occur, the judges will decide these ties by consensus. 
 
 ### The Categories
 
@@ -20,26 +20,26 @@ Each team's score will be the sum of their results for each category, and summed
 |Score    |   Meaning   |
 |-----|--------------------|
 | 0  | Not stated in presentation. |    
-| 1  | Mentioned vaguely but not enough to fully understand. |  
-| 2  | Apparent effort to define problem, but key information is missing. |
-| 3  | The bare minimum was done to meet this requirement.  |        
-| 4  | Largely defined, with some but minimal information missing.  | 
-| 5  | The problem & scope is clearly stated; an outside person knows exactly what Hackathon participants intend to address. |
+| 1  | Mentioned, but lacked details to convey a full understanding and/or completely outside of topic scope.  |  
+| 2  | Apparent effort to define problem, but key information is missing and/or largely outside of the topic scope.  |
+| 3  | Described with a level of detail to convey a reasonable understanding. However, some substantial details were missing. Major aspects of the stated problem statement are outside the topic scope.  |        
+| 4  | Largely defined in good detail with some minor information missing and within the scope of the topic.   | 
+| 5  | The problem & scope is clearly stated; an outside person knows exactly what Hackathon participants intend to address and it is wothin the topic scope. |
 
 :::
 
 ::: {.callout-tip .callout-purple collapse="true"}
 ## Data Sources
 
-*What data were used, and are these data sources adequate to address the scope of their problem?*
+*What data were used, and are these data sources adequate to address the scope of the problem?*
 
 |Score    |   Meaning   |
 |-----|--------------------|
 | 0  | Not stated in presentation. |    
-| 1  | Mentioned vaguely but not enough to fully understand. |            
-| 2  | The data used are mentioned and described in some detail, but overall, this is lacking. |        
-| 3  | The bare minimum was done to meet this requirement.  |        
-| 4  | Largely defined, with some but minimal information missing.  | 
+| 1  | Mentioned, but lacked details to convey a full understanding.. |            
+| 2  | The data used are mentioned, but overall, this is lacking. |        
+| 3  | Described with a level of detail to convey a reasonable understanding. However, some substantial details were missing.  |        
+| 4  | Largely defined in good detail, with some minor information missing.  | 
 | 5  | It is clear for each aspect of their analysis what data were used and where those data were obtained from. | 
 
 **Important!!**  The use of any non-public data sources will result in a zero score for this category. 
@@ -48,15 +48,15 @@ Each team's score will be the sum of their results for each category, and summed
 ::: {.callout-tip .callout-purple collapse="true"}
 ## Analytical Methods
 
-*What approaches were used, are all relevant details adequately described, and are the methods used appropriate for the addressing the problem? Is this a novel approach to addressing the team problem statement?*
+*What approaches were used, are all relevant details adequately described, and are the methods used appropriate for the addressing the problem? Is this a novel approach to addressing the team's problem statement?*
 
 |Score    |   Meaning   |
 |-----|--------------------|
 | 0  | Not stated in presentation. |    
-| 1  | Mentioned vaguely but not enough to fully understand. |            
+| 1  | Mentioned, but lacked details to convey a full understanding. |            
 | 2  | The analytical approaches are mentioned and described in some detail, but overall, it is lacking.|        
-| 3  | The bare minimum was done to meet this requirement.  |        
-| 4  | Largely defined, with some but minimal information missing.  |        
+| 3  | Described with a level of detail to convey a reasonable understanding. However, some substantial details were missing.  |        
+| 4  | Largely defined in good detail, with some minor information missing.   |     
 | 5  | The approaches are clearly stated in sufficient details to understand what was done, and the approach is highly innovative. | 
 
 :::
@@ -64,15 +64,15 @@ Each team's score will be the sum of their results for each category, and summed
 ::: {.callout-tip .callout-purple collapse="true"}
 ## Results
 
-*Were the results from the analysis interpreted correctly? Were appropriate check conducted and assumptions evaluated? Were standard analytical steps conducted correctly including establishing of training and testing sets and setting of hyperparameters? *
+*Were the results from the analysis interpreted correctly? Were appropriate checks conducted and assumptions evaluated? Were standard analytical steps conducted correctly including establishing of training and testing sets and setting of hyperparameters? *
 
 |Score    |   Meaning   |
 |-----|--------------------|
 | 0  | Not stated in presentation. |    
-| 1  | Mentioned vaguely but not enough to fully understand. |            
+| 1  | Mentioned, but lacked details to convey a full understanding. |            
 | 2  | Results are mentioned and described in some detail, but overall, this is lacking.|        
-| 3  | The bare minimum was done to meet this requirement.  |        
-| 4  | Largely provided, with some missed opportunities in providing supporting results.  |        
+| 3  | Described with a level of detail to convey a reasonable understanding. However, some substantial details were missing.  |        
+| 4  | Largely provided in good detail, with some missed opportunities in providing supporting results.  |        
 | 5  | The results were correctly interpreted and used appropriately. When applicable, model assumptions or model fit was evaluated. Limitations to the results are addressed.  | 
 
 :::
@@ -80,15 +80,15 @@ Each team's score will be the sum of their results for each category, and summed
 ::: {.callout-tip .callout-purple collapse="true"}
 ## Impact
 
-*Does the proposed solution/resulting information addresses the team's problem statement, and does the team clearly defines how their results will impact the agricultural industry?*
+*Does the proposed solution/resulting information address the team's problem statement, and does the team clearly defines how the results will impact the agricultural industry?*
 
 |Score    |   Meaning   |
 |-----|--------------------|
 | 0  | Not stated in presentation. |    
-| 1  | Mentioned vaguely but not enough to fully understand. |            
+| 1  | Mentioned, but lacked details to convey a full understanding. |            
 | 2  | Impacts are mentioned and described in some detail, but overall, this is lacking.|        
-| 3  | The bare minimum was done to meet this requirement.  |        
-| 4  | The impacts are largely stated, with some minor omissions and/or lack of details to understand.  |        
+| 3  | Described with a level of detail to convey a reasonable understanding. However, some substantial details were missing.  |        
+| 4  | Largely defined in good detail, with some minor information missing.  |        
 | 5  | The team clearly defines how their results can be used the agricultural industry (or adjacent industry) or will impact the target populations. How these results apply to the the problem scope is stated or unambiguously evident.  | 
 
 :::
@@ -97,13 +97,13 @@ Each team's score will be the sum of their results for each category, and summed
 ::: {.callout-tip .callout-purple collapse="true"}
 ## Final Presentation
 
-*Was there clarity in communication of the problem statement, approaches taken, results and impact? Were the data visualizations compelling and did they bolster the presentation's main points? Were the time restrictions met? Were the questions adequately answered? * 
+*Was there clarity in communication of the problem statement, approaches taken, results and impact? Were the data visualizations compelling and did they bolster the main points? Were the time restrictions met? Were questions adequately answered? * 
 
 
 |Score    |   Meaning   |
 |-----|--------------------|
 | ~~0~~  | *(not an option - failure to give a presentation is equal to forfeiture of the competition)*  |
-| 1  |Excessively short presentations or otherwise inadequate to explain what the team accomplished. |
+| 1  | The presentation did not adhere to the time limit in a substantial way and/or did not explain team activities and findings.  |
 | 2  | Presentation included the basics of what the team accomplished, but there were large leaps in logic that were hard to follow.  |
 | 3  | A decent, average presentation.      |
 | 4  | The majority of presentation was easy to follow and of an appropriate length, with a few stumbling points encountered such as slides that are hard to read.  |
@@ -120,7 +120,7 @@ Each team's score will be the sum of their results for each category, and summed
 ::: {.callout-tip .callout-purple collapse="true"}
 ## Open Science Principles
 
-*Is the source code from data acquisition to analysis made available on a public git repository (e.g. in GitHub, GitLab, Bitbucket)?*
+*Is the source code from data acquisition to analysis made available on a public git repository (e.g. GitHub, GitLab, Bitbucket)?*
 
 |Score    |   Meaning   |
 |-----|--------------------|
