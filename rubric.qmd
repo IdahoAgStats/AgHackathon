@@ -5,6 +5,131 @@ subtitle: ""
 search: false
 ---
 
-#### *TBA*
+Each team's score will be the sum of their result for each category, and summed across judges. 
 
-*(seriously, this is almost done)*
+### The Categories
+
+::: {.callout-tip .callout-purple collapse="true"}
+## Problem Definition
+
+*Is a problem statement is well defined and within the scope of the Hackathon topic?*
+
+
+|Score    |   Meaning   |
+|-----|--------------------|
+| 0  | Not stated in presentation. |    
+| 1  | Mentioned vaguely but not enough to fully understand. |  
+| 2  | Apparent effort to define problem, but key information is missing. |
+| 3  | The bare minimum was done to meet this requirement.  |        
+| 4  | Largely defined, with some but minimal information missing.  | 
+| 5  | The problem & scope is clearly stated; an outside person knows exactly what Hackathon participants intend to address. |
+
+:::
+
+::: {.callout-tip .callout-purple collapse="true"}
+## Data Sources
+
+*What data were used, and are these data sources adequate to address the scope of their problem?*
+
+|Score    |   Meaning   |
+|-----|--------------------|
+| 0  | Not stated in presentation. |    
+| 1  | Mentioned vaguely but not enough to fully understand. |            
+| 2  | The data used are mentioned and described in some detail, but overall, this is lacking. |        
+| 3  | The bare minimum was done to meet this requirement.  |        
+| 4  | Largely defined, with some but minimal information missing.  | 
+| 5  | It is clear for each aspect of their analysis what data were used and where those data were obtained from. | 
+
+**Important!!**  The use of any non-public data sources will result in a zero score for this category. 
+:::
+
+::: {.callout-tip .callout-purple collapse="true"}
+## Analytical Methods
+
+*What approaches were used, are all relevant details adequately described, ans are the methods used appropriate for the addressing the problem? Is this a novel approach to addressing the team problem statement?*
+
+|Score    |   Meaning   |
+|-----|--------------------|
+| 0  | Not stated in presentation. |    
+| 1  | Mentioned vaguely but not enough to fully understand. |            
+| 2  | The analytical approaches are mentioned and described in some detail, but overall,it is lacking.|        
+| 3  | The bare minimum was done to meet this requirement.  |        
+| 4  | Largely defined, with some but minimal information missing.  |        
+| 5  | The approaches are clearly stated in sufficient details to understand what was done, and t
+he approach is highly innovative. | 
+
+:::
+
+::: {.callout-tip .callout-purple collapse="true"}
+## Results
+
+*Were the results from the analysis interpreted correctly? Were appropriate check conducted and assumptions evaluated? Were standard analytical steps conducted correctly including establishing of training and testing sets and setting of hyperparameters? *
+
+|Score    |   Meaning   |
+|-----|--------------------|
+| 0  | Not stated in presentation. |    
+| 1  | Mentioned vaguely but not enough to fully understand. |            
+| 2  | Results are mentioned and described in some detail, but overall, this is lacking.|        
+| 3  | The bare minimum was done to meet this requirement.  |        
+| 4  | Largely provided, with some missed opportunities in providing supporting results.  |        
+| 5  | The results were correctely interpreted and used appropriately. When applicable, model assumptions or model fit was evaluated. Limitations to the results are acknowledged.  | 
+
+:::
+
+::: {.callout-tip .callout-purple collapse="true"}
+## Impact
+
+*Does the proposed solution/resulting information addresses the team's problem statement, and does the team clearly defines how their results will impact the agricultural industry?*
+
+|Score    |   Meaning   |
+|-----|--------------------|
+| 0  | Not stated in presentation. |    
+| 1  | Mentioned vaguely but not enough to fully understand. |            
+| 2  | Impacts are mentioned and described in some detail, but overall, this is lacking.|        
+| 3  | The bare minimum was done to meet this requirement.  |        
+| 4  | The impacts arev largely stated, with some minor omissions and/or lack of details to understand.  |        
+| 5  | The team clearly defines how their results can be used the agricultural industry (or adjacent industry) or will impact the target populations. How these results apply to the the choosen problem scope is stated or unambiguously evident.  | 
+
+:::
+
+
+::: {.callout-tip .callout-purple collapse="true"}
+## Final Presentation
+
+*Was there clarity in communication of the problem statement, approaches taken, results and impact? Were the data visualizations compelling and did they bolster the presentation's main points? Were the time restrictions met? Were the questions adequately answered? * 
+
+
+|Score    |   Meaning   |
+|-----|--------------------|
+| ~~0~~  | *(not an option - failure to give a presentation is equal to forfeiture)*  |
+| 1  |Excessively short presentations or otherwise inadequate to explain what the team accomplished. |
+| 2  | Presentation included the basics of what the team accomplished, but there were large leaps in logic that were hard to follow.  |
+| 3  | A decent, average presentation.      |
+| 4  | The majority of presentation was easy to follow and of an appropriate length, with a few stumbling points encountered such as slides that are hard to read.  |
+| 5  | The presentation followed a logical structure, felt like a narrative telling the story for problem to proposed solutions. Team members were enthusiastic and/or engaging, the visualizations were compelling, support the conclusions well, and overall strengthen the presentation.   |
+
+**Important!!**  
+  - If a team presentation is not given, the team forfeits the competition. 
+  - Involving all team members in the presentation is encouraged, but it is not required. Team balance of the final presentation will have no impact the team score. 
+  
+:::
+
+
+::: {.callout-tip .callout-purple collapse="true"}
+## Open Science Principles
+
+*Is the source code from data acquisition to analysis made available on a public git repository (e.g. in GitHub, GitLab, Bitbucket)?*
+
+|Score    |   Meaning   |
+|-----|--------------------|
+| 0  | There is no public git repository.  |
+| 1  | A public git repository exists, nothing substantive is in it.  |
+| 2  | Some code is present in the repository, but it is highly incomplete.  |
+| 3  | Code for data import and analysis are present in the repository.  |
+| 4  | Code for data import, data curation and analysis files are present in the repository. |
+| 5  | All code used is present in a public git repository, including that for graphics and other outputs.  |
+
+:::
+
+
+
