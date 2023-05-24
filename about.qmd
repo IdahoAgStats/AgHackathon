@@ -17,7 +17,7 @@ The 2023 Agricultural Hackathon was planned by the [ASA Biometry and Statistical
 
 [Julia Piaskowski](https://agstats.io/){target="_blank"}, University of Idaho  
 [Leo Bastos](https://leombastos.github.io/bastoslab/){target="_blank"}, University of Georgia   
-Adrian Correndo, Kansas State University  
+[Adrian Correndo](https://adriancorrendo.github.io/){target="_blank"}, Kansas State University  
 Shelly Hunt, SAS  
 Dylan Beaudette, NRCS   
 Marcia Almeida De Macedo, Syngenta  
