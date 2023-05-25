@@ -10,7 +10,7 @@ The central topic will be unveiled to all Hackathon participants September 01, 2
 
 Keeping with the annual meeting theme of "Open Science Inspires", the topic will leverage public data sets and data transparency to address current agricultual challenges. 
 
-::: {.callout .callout-purple collapse="true"}
+::: {.callout-purple .callout-warning collapse="true"}
 #### Hint
 
 Including a soil scientist on your team will be helpful for the 2023 Hackathon topic.

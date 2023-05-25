@@ -11,7 +11,7 @@ Each team's score will be the sum of their results for each category, and summed
 
 ### The Categories
 
-::: {.callout-purple collapse="true"}
+::: {.callout-purple .callout-warning collapse="true"}
 ## Problem Definition
 
 *Is a problem statement defined and within the scope of the Hackathon topic?*
@@ -28,7 +28,7 @@ Each team's score will be the sum of their results for each category, and summed
 
 :::
 
-::: {.callout-purple collapse="true"}
+::: {.callout-purple .callout-warning collapse="true"}
 ## Data Sources
 
 *What data were used, and are these data sources adequate to address the scope of the problem?*
@@ -45,7 +45,7 @@ Each team's score will be the sum of their results for each category, and summed
 **Important!!**  The use of any non-public data sources will result in a zero score for this category. 
 :::
 
-::: {.callout-purple collapse="true"}
+::: {.callout-purple .callout-warning collapse="true"}
 ## Analytical Methods
 
 *What approaches were used, are all relevant details adequately described, and are the methods used appropriate for the addressing the problem? Is this a novel approach to addressing the team's problem statement?*
@@ -61,7 +61,7 @@ Each team's score will be the sum of their results for each category, and summed
 
 :::
 
-::: {.callout-purple collapse="true"}
+::: {.callout-purple .callout-warning collapse="true"}
 ## Results
 
 *Were the results from the analysis interpreted correctly? Were appropriate checks conducted and assumptions evaluated? Were standard analytical steps conducted correctly including establishing of training and testing sets and setting of hyperparameters? *
@@ -77,7 +77,7 @@ Each team's score will be the sum of their results for each category, and summed
 
 :::
 
-::: {.callout-purple collapse="true"}
+::: {.callout-purple .callout-warning collapse="true"}
 ## Impact
 
 *Does the proposed solution/resulting information address the team's problem statement, and does the team clearly defines how the results will impact the agricultural industry?*
@@ -94,7 +94,7 @@ Each team's score will be the sum of their results for each category, and summed
 :::
 
 
-::: {.callout-purple collapse="true"}
+::: {.callout-purple .callout-warning collapse="true"}
 ## Final Presentation
 
 *Was there clarity in communication of the problem statement, approaches taken, results and impact? Were the data visualizations compelling and did they bolster the main points? Were the time restrictions met? Were questions adequately answered? * 
@@ -117,7 +117,7 @@ Each team's score will be the sum of their results for each category, and summed
 :::
 
 
-::: {.callout-purple collapse="true"}
+::: {.callout-purple .callout-warning collapse="true"}
 ## Open Science Principles
 
 *Is the source code from data acquisition to analysis made available on a public git repository (e.g. GitHub, GitLab, Bitbucket)?*
