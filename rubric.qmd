@@ -5,7 +5,7 @@ subtitle: ""
 search: false
 ---
 
-Below is the judging rubric for the competition. The majority of the judging will considers only what is provided in the final presentation on November 2nd. The only exception to this is the final section on "Open Data Principles". 
+Below is the rubric for judging the competition. The majority of the judging will consider only what is provided in the final presentation on November 2nd. An exception to this is the final section on "Open Data Principles", which considers what is included in public git repository. 
 
 Each team's score will be the sum of their results for each category, and summed across judges. The three highest scoring teams win. If ties occur, the judges will decide these ties by consensus. 
 
