@@ -874,10 +874,10 @@ body:not(.floating) .nav-footer {
 
 /*-- extra --*/
 
-.callout-purple {
+div.callout-purple.callout {
   border-left-color: #939bc9 !important;
-  border-top: 2px solid #939bc9 !important;
-  border-bottom: 2px solid #939bc9 !important;
+  border-top: 1px solid #939bc9 !important;
+  border-bottom: 1px solid #939bc9 !important;
   background-color:  #f0eeeb !important;
   padding: 0em 0em 0em 0em;
   margin-top: 0px;
@@ -885,13 +885,14 @@ body:not(.floating) .nav-footer {
   border-block-color:  #CACFEA !important;
 }
 
-.callout-purple .callout-header {
+div.callout-purple.callout-style-default>.callout-header{
   background-color: #CACFEA !important;
 }
 
-.callout-purple .callout-icon::before {
+.callout-purple.icon .callout-icon {
   background-image: unset !important;
 }
+
 
 .container-special {
   position: relative;
