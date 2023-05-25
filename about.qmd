@@ -1,7 +1,7 @@
 ---
 pagetitle: About
 title: About
-subtitle: "About Us"
+subtitle: "Various Nuts & Bolts of the AgHackathon"
 search: false
 ---
 
