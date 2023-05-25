@@ -893,6 +893,15 @@ div.callout-purple.callout-style-default>.callout-header{
   background-image: unset !important;
 }
 
+div.callout-purple.icon.callout-captioned .callout-icon::before {
+  background-image: unset !important;
+}
+
+.callout-purple.icon.callout-style-default div.callout-icon-container {
+  padding-top: 0em;
+  padding-right: 0em;
+}
+
 
 .container-special {
   position: relative;
