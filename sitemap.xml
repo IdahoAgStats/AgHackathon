@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>idahoagstats.github.io/AgHackathon/about.html</loc>
-    <lastmod>2023-05-25T20:32:08.520Z</lastmod>
+    <loc>https://idahoagstats.github.io/AgHackathon/workshops.html</loc>
+    <lastmod>2023-07-24T23:23:21.434Z</lastmod>
   </url>
   <url>
-    <loc>idahoagstats.github.io/AgHackathon/index.html</loc>
-    <lastmod>2023-05-25T20:32:09.216Z</lastmod>
+    <loc>https://idahoagstats.github.io/AgHackathon/signup.html</loc>
+    <lastmod>2023-07-24T23:23:20.658Z</lastmod>
   </url>
   <url>
-    <loc>idahoagstats.github.io/AgHackathon/rubric.html</loc>
-    <lastmod>2023-05-25T20:32:09.916Z</lastmod>
+    <loc>https://idahoagstats.github.io/AgHackathon/rules.html</loc>
+    <lastmod>2023-07-24T23:23:19.906Z</lastmod>
   </url>
   <url>
-    <loc>idahoagstats.github.io/AgHackathon/rules.html</loc>
-    <lastmod>2023-05-25T20:32:10.336Z</lastmod>
+    <loc>https://idahoagstats.github.io/AgHackathon/index.html</loc>
+    <lastmod>2023-07-24T23:23:18.370Z</lastmod>
   </url>
   <url>
-    <loc>idahoagstats.github.io/AgHackathon/schedule.html</loc>
-    <lastmod>2023-05-25T20:32:10.629Z</lastmod>
+    <loc>https://idahoagstats.github.io/AgHackathon/about.html</loc>
+    <lastmod>2023-07-24T23:23:17.246Z</lastmod>
   </url>
   <url>
-    <loc>idahoagstats.github.io/AgHackathon/signup.html</loc>
-    <lastmod>2023-05-25T20:32:10.925Z</lastmod>
+    <loc>https://idahoagstats.github.io/AgHackathon/rubric.html</loc>
+    <lastmod>2023-07-24T23:23:19.362Z</lastmod>
   </url>
   <url>
-    <loc>idahoagstats.github.io/AgHackathon/topic.html</loc>
-    <lastmod>2023-05-25T20:32:11.257Z</lastmod>
+    <loc>https://idahoagstats.github.io/AgHackathon/schedule.html</loc>
+    <lastmod>2023-07-24T23:23:20.290Z</lastmod>
   </url>
   <url>
-    <loc>idahoagstats.github.io/AgHackathon/workshops.html</loc>
-    <lastmod>2023-05-25T20:32:11.553Z</lastmod>
+    <loc>https://idahoagstats.github.io/AgHackathon/topic.html</loc>
+    <lastmod>2023-07-24T23:23:21.050Z</lastmod>
   </url>
 </urlset>

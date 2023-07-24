@@ -1,1 +1,1 @@
-Sitemap: idahoagstats.github.io/AgHackathon/sitemap.xml
+Sitemap: https://idahoagstats.github.io/AgHackathon/sitemap.xml
