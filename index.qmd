@@ -5,8 +5,6 @@ subtitle: "Overview"
 editor: source
 sidebar: false
 search: false
-twitter-card:
-  image: "images/AgHackathon_logo.png"
 ---
 
 
