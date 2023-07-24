@@ -11,7 +11,7 @@ website:
   image: images/AgHackathon_logo.png
   favicon: images/favicon.png
   open-graph: true
-  site-url:  idahoagstats.github.io/AgHackathon/ 
+  site-url:  https://idahoagstats.github.io/AgHackathon
   #repo-url: https://github.com/IdahoAgStats/AgHackathon
   #repo-actions: [edit, issue]
   google-analytics: "G-ZZST40VXE1"
