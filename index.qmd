@@ -29,7 +29,7 @@ This is a team competition open to all graduate students across the ASA, CSSA an
 
 ### Format
 
-The Hackathon topic will be announced September 02. That week, we will hold a series of webinars on how to access and retrieve data from public databases relevant to the Hackathon topic. We will provide one opportunity for teams to meet in person at the Annual Meetings and work. Outside of this, teams can meet and work as much as each chooses to. Students may participate as virtual attendees, but every team member must register for the meetings. Teams will present their findings on the last day of the conference in a 15-minute presentation and will be judged according to a [rubric](rubric.qmd). You can view the full schedule [here](schedule.qmd). 
+The Hackathon topic will be announced September 04. That week, we will hold a series of webinars on how to access and retrieve data from public databases relevant to the Hackathon topic. We will provide one opportunity for teams to meet in person at the Annual Meetings and work. Outside of this, teams can meet and work as much as each chooses to. Students may participate as virtual attendees, but every team member must register for the meetings. Teams will present their findings on the last day of the conference in a 15-minute presentation and will be judged according to a [rubric](rubric.qmd). You can view the full schedule [here](schedule.qmd). 
 
 :::
 

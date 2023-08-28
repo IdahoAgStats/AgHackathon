@@ -6,7 +6,7 @@ search: false
 ---
 
 
-The central topic will be unveiled to all Hackathon participants September 01, 2023. 
+The central topic will be unveiled to all Hackathon participants September 04, 2023. 
 
 Keeping with the annual meeting theme of "Open Science Inspires", the topic will leverage public data sets and data transparency to address current agricultual challenges. 
 
