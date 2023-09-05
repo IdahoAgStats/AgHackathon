@@ -6,6 +6,18 @@ search: false
 ---
 
 
-The workshop details will be unveiled September 04, 2023, along with the Hackathon topic. Since the Meeting theme is "Open Science Inspires", we will provide training materials and live webinars on how to access public data sources that are relevant to the Hackathon topic. 
+### September 05
 
-Workshops will be held online the week of September 04.
+- **Crop CASMA & Volumetric Water Content** | [slides](https://leombastos.github.io/bastoslab/teaching/2023-aghack-vwc/2023-aghack-vwc-pres.html#/4/1) | Video link coming soon | [scripts](https://github.com/leombastos/2023_aghack_vwc) | [additional resources](https://leombastos.github.io/bastoslab/teaching/teaching.html)
+
+
+- **Weather Data from DAYMET & NASA POWER** | Video link coming soon | [scripts](https://github.com/adriancorrendo/AgrometR/)
+
+### Sept 07
+
+Soil survey data
+
+### Sept 09
+
+Remote sensing
+
