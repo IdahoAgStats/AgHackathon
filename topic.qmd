@@ -1,9 +1,41 @@
 ---
 pagetitle: Topic
 title: Hackathon Topic
-subtitle: "The Central Organizing Question"
 search: false
 ---
+
+
+## Hackathon Challenge Question
+
+::: {.header-block}
+
+::: {.pullout-text}
+::: {.pullout-container}
+::: {.pullout-block .black-background}
+
+## How can we get an accurate estimate of carbon stocks across a landscape with minimal ground truth data? 
+
+:::
+:::
+:::
+
+<br>
+
+Given the impossibility of intensive soil sampling across all terrestrial land, how can we use existing data on soil carbon stocks, bulk density, and relevant covariates such as topography, soil moisture, climate, soil type, land use history, remote-sensing derived parameters and other spatially explicit data to better understand soil carbon stocks? And given that all these data sources have different data resolutions, how do we integrate these data sets together to estimate carbon stocks across a landscape? 
+
+:::
+
+::: {.header-block}
+
+Teams are welcome to approach this issue from any angle they would like. This is an enormous challenge, and it cannot be solved through any single approach. Narrowing the topic to an issue and particular region the team would like to address is an important part of this competition. The topic can be narrowed to geographic region and/or an analytical aspect that is currently unresolved. 
+
+Teams are welcome to use stochastic approaches, machine learning methodologies, deep learning or process-based models to estimate soil carbon. Alternatively, teams may choose to approach some of the issues associated with upstream data preparation, such as deriving spatially consistent data sets for data measured or available on different spatial scales. Once you identify a problem, teams will need to obtain relevant *public* data sets to test their hypotheses. The workshops we are providing will introduce several public databases that store date relevant to predicting soil carbon. 
+
+We have a small [reference library](https://www.zotero.org/groups/5168779/aghackathon/collections/XR6T8ULN) that includes all the references below for further study. If a team is unsure if their approach is relevant, feel free to reach out to any [Hackathon planning committee member](about.qmd). 
+
+:::
+
+
 ::: {.header-block}
 
 ## Background
@@ -55,35 +87,6 @@ There are concerns that farm carbon markets are not meeting these standards and 
 :::
 
 
-## Hackathon Challenge Question
-
-::: {.header-block}
-
-::: {.pullout-text}
-::: {.pullout-container}
-::: {.pullout-block .black-background}
-
-## How can we get an accurate estimate of carbon stocks across a landscape with minimal ground truth data? 
-
-:::
-:::
-:::
-
-<br>
-
-Given the impossibility of intensive soil sampling across all terrestrial land, how can we use existing data on soil carbon stocks, bulk density, and relevant covariates such as topography, soil moisture, climate, soil type, land use history, remote-sensing derived parameters and other spatially explicit data to better understand soil carbon stocks? And given that all these data sources have different data resolutions, how do we integrate these data sets together to estimate carbon stocks across a landscape? 
-
-:::
-
-::: {.header-block}
-
-Teams are welcome to approach this issue from any angle they would like. This is an enormous challenge, and it cannot be solved through any single approach. Narrowing the topic to an issue and particular region the team would like to address is an important part of this competition. The topic can be narrowed to geographic region and/or an analytical aspect that is currently unresolved. 
-
-Teams are welcome to use stochastic approaches, machine learning methodologies, deep learning or process-based models to estimate soil carbon. Alternatively, teams may choose to approach some of the issues associated with upstream data preparation, such as deriving spatially consistent data sets for data measured or available on different spatial scales. Once you identify a problem, teams will need to obtain relevant *public* data sets to test their hypotheses. The workshops we are providing will introduce several public databases that store date relevant to predicting soil carbon. 
-
-We have a small [reference library](https://www.zotero.org/groups/5168779/aghackathon/collections/XR6T8ULN) that includes all the references below for further study. If a team is unsure if their approach is relevant, feel free to reach out to any [Hackathon planning committee member](about.qmd). 
-
-:::
 
 ::: {.callout-purple .callout-note collapse="true"}
 #### References Cited
