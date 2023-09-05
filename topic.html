@@ -144,7 +144,18 @@ gtag('config', 'G-ZZST40VXE1', { 'anonymize_ip': true});
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a>
+  <ul class="collapse">
+  <li><a href="#soil-carbon" id="toc-soil-carbon" class="nav-link" data-scroll-target="#soil-carbon">Soil Carbon</a></li>
+  <li><a href="#soil-carbon-markets-carbon-credits" id="toc-soil-carbon-markets-carbon-credits" class="nav-link" data-scroll-target="#soil-carbon-markets-carbon-credits">Soil Carbon Markets &amp; Carbon Credits</a></li>
+  </ul></li>
+  <li><a href="#hackathon-challenge-question" id="toc-hackathon-challenge-question" class="nav-link" data-scroll-target="#hackathon-challenge-question">Hackathon Challenge Question</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -167,21 +178,99 @@ gtag('config', 'G-ZZST40VXE1', { 'anonymize_ip': true});
 
 </header>
 
-<p>The central topic will be unveiled to all Hackathon participants September 04, 2023.</p>
-<p>Keeping with the annual meeting theme of “Open Science Inspires”, the topic will leverage public data sets and data transparency to address current agricultual challenges.</p>
+<section id="background" class="level2 header-block">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<section id="soil-carbon" class="level3">
+<h3 class="anchored" data-anchor-id="soil-carbon">Soil Carbon</h3>
+<p>Soils are the largest terrestial reservoir of carbon. Understanding total carbon storage in soils is critical for understanding overall soil health and carbon sequestration potential. Carbon stocks are considered in terms of their inorganic and organic components. Soil inorganic carbon (SIC, also called soil carbonates) are thought to be relatively stable, changing on a geological timescale. In deep soils greater than 1 meter, SIC may constitute the largest carbon pool (Kim et al.&nbsp;2020). Soil organic carbon is a common umbrella indicator of overall soil health. Soil organic carbon (SOC) is more labile than SIC and hence is the focus of interventions to increase soil carbon storage. There is considerable uncertainty surrounding soil organic stocks response to a changing climate, plant productivity and soil microbial dynamics, and this uncertainty stymies understanding of carbon cycle dynamics (Sulman et al.&nbsp;2018). Some of the major drivers of soil organic carbon include:</p>
+<ul>
+<li>climate (temperature and precipitation);</li>
+<li>topography (e.g.&nbsp;slope &amp; aspect) and how this influences soil moisture;</li>
+<li>soil parent material and its contribution to soil minerals, texture and soil type;</li>
+<li>land cover history and vegetation type (e.g.&nbsp;forests, prairie);</li>
+<li>land use and land management (e.g.&nbsp;cropping history);</li>
+<li>soil biology (microbiota and fauna);</li>
+<li>soil properties: soil type, soil aggregation, texture (especially silt and clay content), clay mineralogy;</li>
+</ul>
+<p>(Wiesmeier et al.&nbsp;2019; Thapa et al.&nbsp;2023).</p>
+<p>Most SOC studies focus on the upper 10 to 30 cm since the surface soils have the highest concentration of SOC, and SOC rapdily declines rapidly with depth. There has been work to model this decline, using an exponential decay model and splines among other approaches to predict soil carbon by depth (Minasny et al.&nbsp;2013). These estimates are complicated by inconsistent soil carbon measurement by depth, different sampling approaches for obtaining a soil profile and variability of soil organic carbon stocks across a landscape. Additionally, as many soil carbon point estimates are expressed per unit mass of soil, it is important to consider the bulk density, or the volume of soil. Developing methodologies to harmonize disparate soil data sets in order to estimate soil carbon to depth is an area of active research.</p>
+<p>It is not feasible from an economic or labor standpoint to collect field observations on stored soil carbon on every acre of land, so we must rely on models for understanding soil carbon storage across a landscape. To date, there have been many efforts to predict soil carbon on a landscape level, using ecosystem process models, machine learning approaches, remote sensing data coupled with ground truthed information, among many approches (He et al.&nbsp;2021; Akbari et al.&nbsp;2021; Pierson et al.&nbsp;2022; Yang et al.&nbsp;2023; Encina-Rojas et al.&nbsp;2023).</p>
+<p>Observational and process-based models have been used to estimate soil carbon across landscapes. Observational models typically use point data from soil samples taken across a landscape, which may also be paired with digital soil mapping information and geostatistical techniques (Feeney et al.&nbsp;2022; Yang et al.&nbsp;2023). These maps are derived from point data and extrapolated to their surrounding regions using common covariates such as topography, climate and landuse, pedotransfer functions and statistical or machine learning tools (e.g.&nbsp;kriging, random forest) to interpolate between data points (Minasny et al.&nbsp;2013).</p>
+<p>Process based models such as <em>ecosys</em> and <em>MIMICS</em> are used to determine soil carbon budget and soil carbon credits by modeling the complex processes of carbon deposition in soil, decomposition, retention and loss – that is, soil carbon cycling (Pierson et al.&nbsp;2022). Process models are thought to better model future soil carbon dynamics than statistical or machine learning models since they account for how biochemical cycles and environmental and climatic conditions interact to influence soil carbon stocks (Pierson et al.&nbsp;2022). However, there is high variability in process model outputs due to errors and uncertainties in the input variables themselves that are propagated, especially with regard to SOC (Zhou et al.&nbsp;2023). Many ecosystem models that calculate soil carbon on a landscape level requires initial soil organic carbon stock and soil bulk density (Zhou et al.&nbsp;2021).</p>
+<p>Two widely used soil carbon stock data sets for the United States, Rapid Carbon Assessment data set (RaCA) and Gridded Soil Survey Geographic Database (gSSURGO), have large discrepancies regarding the SOC stocks in the upper 30 cm of soil (Zhou et al.&nbsp;2023). Other soil carbon maps have similar limitations; a comparison of soil maps for Great Britain indicated considerably higher discrepancies in soils with overall higher predicted SOC (Feeney et al.&nbsp;2022). There has been some work into using ensemble methods to aggregate and unify maps that have overlapping regions but are composed of different point data and/or use different spatial scales (Malone et al.&nbsp;2014; Román Dobarco et al.&nbsp;2017).</p>
+<p>Remote sensing outputs are also used for estimating soil carbon across a landscape, using information regarding soil moisture, brightness, and vegetative indices and seasonal phenological indicators. Remote sensing relies on proxy relationships between soil carbon and what can be estimated with remote sensing tools such as vegetation cover and soil moisture. As these relationships are often nonlinear, remote sensing-based estimates of SOC often use machine learning or deep learning approaches (Zhang et al.&nbsp;2022). Predicting SOC from remote sensing involves many decisions from the remote sensing data source to use (LandSat, Sentinel, etc), the year and seasonality of the data to use and what derived data projects are most useful. One study identified soil type, vegetative cover and climate as the most influential variables for predicting SOC (Encina-Rojas et al.&nbsp;2023), while another study indicated several phenological parameters in addition to vegetation, bright-related and moisture indices influence SOC estimates (He et al.&nbsp;2021). Previous studies have also sought to determine optimal season for remote sensing imaging to predict soil carbon (Akbari et al.&nbsp;2021). Using remote sensing to estimate soil carbon stocks is also an area of active research.</p>
+</section>
+<section id="soil-carbon-markets-carbon-credits" class="level3">
+<h3 class="anchored" data-anchor-id="soil-carbon-markets-carbon-credits">Soil Carbon Markets &amp; Carbon Credits</h3>
+<p>Clearly, there are many challenges in estimating soil carbon across a landscape and to depth. Understanding soil carbon stocks is important to evaluating soil health and participating in carbon markets.</p>
+<blockquote class="blockquote">
+<p>Accurately calculating cropland carbon budget and soil carbon credit is critical to assessing climate change mitigation potential in agroecosystems. –Zhou et al.&nbsp;2023</p>
+</blockquote>
+<p>Carbon markets are an emerging opportunity for farmers to either adopt or continue to practice carbon sequestration activities for compensation. There are many carbon market programs (e.g.&nbsp;<a href="https://bayerforground.com/farmers">Bayer</a>, <a href="https://www.corteva.us/products-and-solutions/digital-solutions/carbon/carbon-payment-calculator.html">Corteva</a>, <a href="https://www.indigoag.com/carbon">Indigo Ag</a>) for farmers and landowners to participate by providing carbon offsets, that is, “a measurable reduction, avoidance, or sequestration of [greenhouse gas] emissions” that has a monetary and/or tradeable value (Stubbs et al.&nbsp;2021). These programs expect specific management activities to sequester carbon or reduce production of greenhouse gases and are accompanied by a collection of requirements for measuring, reporting and validating these farm carbon offsets.</p>
+<p>Carbon markets are currently a $2 billion dollar industry in its “gold rush” stage, according to <a href="https://www.politico.com/newsletters/the-long-game/2023/04/04/what-taylor-swift-and-offsets-have-in-common-00090351">Politico</a> (Kahb et al.&nbsp;2023). Carbon markets are largely unregulated by governments, but there are voluntary efforts to establish standards (Donofrio et al.&nbsp;2022; Kahb et al.&nbsp;2023) These standards include information on:</p>
+<ol type="1">
+<li><em>realness</em>: the quality and credibility of quantifiable carbon offsets;<br>
+</li>
+<li><em>additionality</em>: carbon reduction through specific management activities;<br>
+</li>
+<li><em>leakage</em>: carbon sequestration practices in one location leading to carbon release in another adjacent location;<br>
+</li>
+<li><em>permanence</em>: long term carbon storage;</li>
+<li><em>verification</em>: compliance measures.</li>
+</ol>
+<p>There are concerns that farm carbon markets are not meeting these standards and are themselves unreliable sources of long term reductions in atmospheric carbon (Stubbs et al.&nbsp;2021). Accurate soil carbon maps are a critical component of establishing stable carbon markets and carbon crediting.</p>
+</section>
+</section>
+<section id="hackathon-challenge-question" class="level2">
+<h2 class="anchored" data-anchor-id="hackathon-challenge-question">Hackathon Challenge Question</h2>
+</section>
+<div class="header-block">
+<div class="pullout-text">
+<div class="pullout-container">
+<section id="how-can-we-get-an-accurate-estimate-of-carbon-stocks-across-a-landscape-with-minimal-ground-truth-data" class="level2 pullout-block black-background">
+<h2 class="anchored" data-anchor-id="how-can-we-get-an-accurate-estimate-of-carbon-stocks-across-a-landscape-with-minimal-ground-truth-data">How can we get an accurate estimate of carbon stocks across a landscape with minimal ground truth data?</h2>
+</section>
+</div>
+</div>
+<p><br></p>
+<p>Given the impossibility of intensive soil sampling across all terrestrial land, how can we use existing data on soil carbon stocks, bulk density, and relevant covariates such as topography, soil moisture, climate, soil type, land use history, remote-sensing derived parameters and other spatially explicit data to better understand soil carbon stocks? And given that all these data sources have different data resolutions, how do we integrate these data sets together to estimate carbon stocks across a landscape?</p>
+</div>
+<div class="header-block">
+<p>Teams are welcome to approach this issue from any angle they would like. This is an enormous challenge, and it cannot be solved through any single approach. Narrowing the topic to an issue and particular region the team would like to address is an important part of this competition. The topic can be narrowed to geographic region and/or an analytical aspect that is currently unresolved.</p>
+<p>Teams are welcome to use stochastic approaches, machine learning methodologies, deep learning or process-based models to estimate soil carbon. Alternatively, teams may choose to approach some of the issues associated with upstream data preparation, such as deriving spatially consistent data sets for data measured or available on different spatial scales. Once you identify a problem, teams will need to obtain relevant <em>public</em> data sets to test their hypotheses. The workshops we are providing will introduce several public databases that store date relevant to predicting soil carbon.</p>
+<p>We have a small <a href="https://www.zotero.org/groups/5168779/aghackathon/collections/XR6T8ULN">reference library</a> that includes all the references below for further study. If a team is unsure if their approach is relevant, feel free to reach out to any <a href="./about.html">Hackathon planning committee member</a>.</p>
+</div>
 <div class="callout callout-style-default callout-purple no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Hint
+References Cited
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Including a soil scientist on your team will be helpful for the 2023 Hackathon topic.</p>
+<p>Akbari M, Goudarzi I, Tahmoures M, et al (2021) Predicting soil organic carbon by integrating Landsat 8 OLI, GIS and data mining techniques in semi-arid region. <em>Earth Sci Inform</em> 14:2113–2122. https://doi.org/10.1007/s12145-021-00673-8</p>
+<p>Donofrio S, Maguire P, Daley C, et al (2022) <strong>The Art of Integrity: State of the Voluntary Carbon Markets</strong> 2022 Q3. Forest Trends Association, Washington DC</p>
+<p>Encina-Rojas A, Ríos-Velázquez D, Sevilla-Linares V, et al (2023) First soil organic carbon report of Paraguay. <em>Geoderma Reg</em> 32:e00611. https://doi.org/10.1016/j.geodrs.2023.e00611</p>
+<p>Feeney CJ, Cosby BJ, Robinson DA, et al (2022) Multiple soil map comparison highlights challenges for predicting topsoil organic carbon concentration at national scale. <em>Sci Rep</em> 12:1379. https://doi.org/10.1038/s41598-022-05476-5</p>
+<p>He X, Yang L, Li A, et al (2021) Soil organic carbon prediction using phenological parameters and remote sensing variables generated from Sentinel-2 images. <em>CATENA</em> 205:105442. https://doi.org/10.1016/j.catena.2021.105442</p>
+<p>Kahb D, Prang A, Wolman J (2023) A Taylor Swift moment for carbon markets. <strong><a href="https://www.politico.com/newsletters/the-long-game/2023/04/04/what-taylor-swift-and-offsets-have-in-common-00090351">Politico</a></strong></p>
+<p>Kim JH, Jobbágy EG, Richter DD, et al (2020) Agricultural acceleration of soil carbonate weathering. <em>Glob Change Biol</em> 26:5988–6002. https://doi.org/10.1111/gcb.15207</p>
+<p>Malone BP, Minasny B, Odgers NP, McBratney AB (2014) Using model averaging to combine soil property rasters from legacy soil maps and from point data. <em>Geoderma</em> 232–234:34–44. https://doi.org/10.1016/j.geoderma.2014.04.033</p>
+<p>Minasny B, McBratney AB, Malone BP, Wheeler I (2013) Chapter One - Digital Mapping of Soil Carbon. In: Sparks DL (ed) <strong>Advances in Agronomy</strong>. Academic Press, pp 1–47</p>
+<p>Pierson D, Lohse KA, Wieder WR, et al (2022) Optimizing process-based models to predict current and future soil organic carbon stocks at high-resolution. <em>Sci Rep</em> 12:10824. https://doi.org/10.1038/s41598-022-14224-8</p>
+<p>Román Dobarco M, Arrouays D, Lagacherie P, et al (2017) Prediction of topsoil texture for Region Centre (France) applying model ensemble methods. <em>Geoderma</em> 298:67–77. https://doi.org/10.1016/j.geoderma.2017.03.015</p>
+<p>Stubbs M, Hoover K, Ramseur J (2021) Agriculture and Forestry Offsets in Carbon Markets: Background and Selected Issues. <em>Congressional Research Service</em></p>
+<p>Sulman BN, Moore JAM, Abramoff R, et al (2018) Multiple models and experiments underscore large uncertainty in soil carbon dynamics. <em>Biogeochemistry</em> 141:109–123. https://doi.org/10.1007/s10533-018-0509-z</p>
+<p>Thapa VR, Ghimire R, Adhikari KP, Lamichhane S (2023) Soil organic carbon sequestration potential of conservation agriculture in arid and semi-arid regions: A review. <em>J Arid Environ</em> 217:105028. https://doi.org/10.1016/j.jaridenv.2023.105028</p>
+<p>Wiesmeier M, Urbanski L, Hobley E, et al (2019) Soil organic carbon storage as a key function of soils - A review of drivers and indicators at various scales. <em>Geoderma</em> 333:149–162. https://doi.org/10.1016/j.geoderma.2018.07.026</p>
+<p>Yang R-M, Huang L-M, Zhang X, et al (2023) Mapping the distribution, trends, and drivers of soil organic carbon in China from 1982 to 2019. <em>Geoderma</em> 429:116232. https://doi.org/10.1016/j.geoderma.2022.116232</p>
+<p>Zhang L, Cai Y, Huang H, et al (2022) A CNN-LSTM Model for Soil Organic Carbon Content Prediction with Long Time Series of MODIS-Based Phenological Variables. <em>Remote Sens</em> 14:. https://doi.org/10.3390/rs14184441</p>
+<p>Zhou W, Guan K, Peng B, et al (2021) Quantifying carbon budget, crop yields and their responses to environmental variability using the ecosys model for U.S. Midwestern agroecosystems. <em>Agric For Meteorol</em> 307:108521. https://doi.org/10.1016/j.agrformet.2021.108521</p>
+<p>Zhou W, Guan K, Peng B, et al (2023) How does uncertainty of soil organic carbon stock affect the calculation of carbon budgets and soil carbon credits for croplands in the U.S. Midwest? <em>Geoderma</em> 429:116254. https://doi.org/10.1016/j.geoderma.2022.116254</p>
 </div>
 </div>
 </div>
