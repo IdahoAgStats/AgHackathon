@@ -5,6 +5,3 @@ subtitle: ""
 description: "Registration for the 2023 Hackathon is now closed."
 search: false
 ---
-
-
-
