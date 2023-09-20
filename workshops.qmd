@@ -6,18 +6,15 @@ search: false
 ---
 
 
-### September 05
 
 - **Crop CASMA & Volumetric Water Content** | [slides](https://leombastos.github.io/bastoslab/teaching/2023-aghack-vwc/2023-aghack-vwc-pres.html#/4/1) | [Video](https://youtu.be/jaEmBvdz9j8) | [scripts](https://github.com/leombastos/2023_aghack_vwc) | [additional resources](https://leombastos.github.io/bastoslab/teaching/teaching.html)
 
 
 - **Weather Data from DAYMET & NASA POWER** | [Video](https://youtu.be/r38NfwZcZPQ) | [scripts](https://github.com/adriancorrendo/AgrometR/)
 
-### Sept 07
 
 - **Soil survey data** | link to slides coming soon | [additional resources](http://ncss-tech.github.io/AQP/)
 
-### Sept 09
 
-Remote sensing
+- **[Remote sensing resources](remote-sensing-resources.qmd)**
 

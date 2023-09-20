@@ -1,0 +1,240 @@
+---
+pagetitle: "remote-sensing-resources"
+title: "Remote Sensing Resources"
+editor: source
+sidebar: true
+search: false
+---
+
+## Online Resources
+
+### Learning
+- [Remote Sending Short Course](https://nptel.ac.in/courses/105108077)
+- [rspatial guide](https://rspatial.org/raster/rs/index.html)
+- [predictive soil mapping](https://soilmapper.org/)
+- [multispectral remote sensing data in python](https://www.earthdatascience.org/courses/use-data-open-source-python/multispectral-remote-sensing/landsat-in-Python/open-and-crop-data/)
+- [AWS guide and data sets](https://registry.opendata.aws/usgs-landsat/index.html)
+
+### Data Sources
+
+#### Landsat
+
+- [EarthExplorer](https://earthexplorer.usgs.gov/) USGS resource, requires EROS login
+- [GloVis](https://glovis.usgs.gov/) explore LandSat data sets over time, also uses EROS login
+
+#### MODIS
+
+- [AρρEEARS](https://appeears.earthdatacloud.nasa.gov/) requires login
+
+#### Sentinel
+
+- [Copernicus SciHub](https://scihub.copernicus.eu/) requires login
+
+#### Other Landscape level data
+
+- [The National Map (v2.0)](https://apps.nationalmap.gov/downloader/) for accessing DEM data
+
+## General Notes on Remotely Sensed Data
+
+Remote sensing concerns *passively sensing* that relies on the sun itself. It uses information from solar radiation reflected or emitted from the earth’s surface, and hence only works in the daytime (there are some exceptions, but this workshop will not cover that). Since these data are gathered from satellites in the Earth's orbit, there are frequently quality issues associated with them due to cloud cover, smoke, and other factors that complicate direct usage of raw spectral data from remote sensors.
+
+### Data Processing
+
+Remote sensing data typically requires additional preprocessing to ready it for analysis to correct for to rescale data, remove noise, and handle other invalid data points. These data are classified into ordered levels of processing that varies by data provider by overall follows this system: 
+
+- ***Level 0**: Raw data without any calibration
+
+- **Level 1A**: Raw data bundled with radiometric and geometric calibration coefficients and geolocational information
+	
+- **Level 1B**: Radiometric and geometric calibration from Level 1A have been applied (top of atmosphere reflectance)
+
+- **Level 2**: Geophysical parameters (e.g., top of canopy reflectance, surface temp.), application of various transformations and atmospheric corrections
+
+- **Level 3**: Data products (derived from Level 2 data)
+
+::: {.callout-tip}
+
+It is often quite easier to use one of the many downstream data products produced by the USGS or other agencies. These have completed a level of data preprocessing and cleaning to make the data ready for analysis. 
+
+:::
+
+## Common preprocessing
+
+#### Digital numbers to meaningful units 
+
+This is often done automatically by programs to convert highly compressed data into standard units
+
+### Atmospheric correction
+
+Remove atmospheric effects (i.e. atmospheric 'haze'), the distortion of solar radiation by the earth's atmosphere. It's related to two key features: 
+
+**Radiance**:  directly measured by remote sensing instruments. how much light the instrument "sees" from the object being observed
+
+**Reflectance**: is the ratio of the amount of light leaving a target to the amount of light striking the target (unitless).
+
+#### Topographic illumination correction
+
+To adjust for how elevation and orientation can impact measured radiance. 
+
+#### Geolocation correction
+
+Orthorectification using DEM and imagery to correct for terrain distortions and scale anomalies. 
+
+>  Orthorectification is the process of removing the effects of image perspective (tilt) and relief (terrain) effects for the purpose of creating a planimetrically correct image. The resultant orthorectified image has a constant scale wherein features are represented in their 'true' positions. This allows for the accurate direct measurement of distances, angles, and areas (i.e. mensuration). Orthorectified images are commonly used as in visualization tools such as Google Earth, OSSIM Planet, ArcMap, WMS, etc.
+>. -[OSSIM](https://trac.osgeo.org/ossim/wiki/orthorectification)
+
+Orthrectification requires (1) an image with accurate sensor geometry; and (2) an elevation model of the ground surface in DEM, DTED, or SRTM format.
+
+#### Cloud matching
+
+Cloud are cold and have high reflectance in the visible regions electromagnetic spectrum. And the shadows cast by cloud are dark. Based on cloud elevation and sun angle, the cloud shadow position can be determined and accounted for.  
+
+#### Image Mosaicing
+
+When stitching together two images, there may be some differences that need to be accounted for
+
+#### Pansharpening
+
+Merging high-resolution panchromatic and lower resolution multispectral imagery to create a single high-resolution color image
+
+#### Quality Layers
+
+Remote sensing data sources MODIS and Landsat 8 provide metadata regarding quality information at the pixel level. It is encoded in binary format, providding information on cloud likelihood, fill information and other relevaant quality parameters. There are functions written into modern software packages to decode this information. 
+
+## Remotely Sensed Data Sources
+
+There are so many! The major ones are Landsat, MODIS, and Sentinel, each described briefly below. 
+
+### Landsat
+
+[NASA](https://landsat.gsfc.nasa.gov/data/where-to-get-data/)
+[AWS](https://aws.amazon.com/public-data-sets/landsat/) (landsat 1-8)
+
+- longest running remote sensing source
+- spatial resolution of 15-60 m 
+- taken every 16 days, temporal resolution can be increased by using combining satellites (Landsat 8 & 9 orbit are offset, so together they have an 8-day repeat interval)
+- Landsat 7: since 1999, 8 spectral bands
+- Landsat 8: since 2013, 11 spectral bands
+- Landsat 9: since 2021, 11 spectral bands
+
+#### Landsat Bands
+
+These consist of multiple spectral bands, each with different uses (e.g. coastal water studies, detecting cirrus clouds, surface temperature)
+
+The best bands for [agriculture](https://www.usgs.gov/faqs/what-are-best-landsat-spectral-bands-use-my-research) in the Landsat 8-9 Operational Land Imager (OLI) and Thermal Infrared Sensor (TIRS): 
+
+| Bands | Wavelengths($\mu m$) | Resolution ($m$) |
+|-----------|----------|-----------|
+| Band 2 - Blue | 0.45 - 0.51 | 30 |
+| Band 3 - Green | 0.53 - 0.59 | 30 |
+| Band 4 - Red | 0.53 - 0.59 | 30 |
+| Band 5 - Near Infrared (NIR) | 0.53 - 0.59 | 30 |
+| Band 6 - SWIR 1 | 1.57 - 1.65| 30 |
+| Band 7 - SWIR 2 | 2.11 - 2.29 | 30 |
+
+*SWIR = short wave infrared*
+
+Other bands:
+
+| Bands | Wavelengths($\mu m$) | Resolution ($m$) |
+|-----------|----------|-----------|
+| Band 1 - Coastal aerosol | 0.43 - 0.45 | 30 |
+| Band 8 - Panchromatic| 0.50 - 0.68 | 15 |
+| Band 9 - Cirrus | 1.36 - 1.38 | 30 |
+| Band 10 - TIRS 1 | 10.6 - 11.19 | 100 |
+| Band 11 - TIRS 2| 11.50 - 12.51| 100 |
+
+Note that Landsat 4-5 Thematic Mapper and Landsat 7 Enhanced Thematic Mapper Plus have different ranges for each 
+
+### MODIS (Moderate Resolution Imaging Spectroradiometer)
+
+- most fine-grained resolution data, taken every 24 hours 
+- there are many ways to access original MODIS data: 
+  - [options](https://modis.gsfc.nasa.gov/tools/)
+  - [global subset tool](https://modis.ornl.gov/globalsubset/)
+  - [API](https://modis.ornl.gov/data/modis_webservice.html)
+  - [r API example](https://github.com/ornldaac/modis_restservice_qc_filter_R/blob/master/modis_restservice_qc_filter_R.ipynb)
+  - [python api example](https://github.com/ornldaac/modis_restservice_qc_filter_Python/blob/master/modis_restservice_qc_filter_Python.ipynb)
+
+### Setinel-2
+
+> Sentinel-2 (S2) is a wide-swath, high-resolution, multispectral imaging mission with a global 5-day revisit frequency. The S2 Multispectral Instrument (MSI) samples 13 spectral bands: visible and NIR at 10 meters, red edge and SWIR at 20 meters, and atmospheric bands at 60 meters spatial resolution. It provides data suitable for assessing state and change of vegetation, soil, and water cover.  
+> -[Google Earth](https://developers.google.com/earth-engine/datasets/catalog/sentinel-2)
+
+[sen2r](https://sen2r.ranghetti.info/) package and graphical user interface. 
+
+[Multispectral remote sensing data in python](https://www.earthdatascience.org/courses/use-data-open-source-python/multispectral-remote-sensing/landsat-in-Python/open-and-crop-data/)
+
+## Downstream Data
+
+### Vegegative Indices
+
+You can access processed data that has already calculated there, but here are some equations. 
+
+| indices	| formula |	reference |
+| ------|-----------|-----------|
+| Brightness index  |	$Red_2+NIR_2$ |	[Khan et al 2001](https://link.springer.com/article/10.1007/s12145-021-00673-8#ref-CR20) |
+| Soil adjusted vegetation index |	$((1+L)(NIR−Red))/(NIR+Red+L)$	| [Huete 1988](https://link.springer.com/article/10.1007/s12145-021-00673-8#ref-CR17) |
+| Vegetation soil salinity index |	$2Green−5(Red+NIR)$	| [Dehni and Lounis 2012](https://link.springer.com/article/10.1007/s12145-021-00673-8#ref-CR5) |
+| Normalized difference vegetation index |	$(NIR−Red)/(NIR+Red)$	| [Rouse et al. 1974](https://link.springer.com/article/10.1007/s12145-021-00673-8#ref-CR34) |
+| Enhanced vegetation index |	$g×(NIR−Red)/(NIR+C1×Red−C2×Blue+L)$	[Huete et al. 2002](https://link.springer.com/article/10.1007/s12145-021-00673-8#ref-CR18) |
+| Non-linear vegetation index |	$(NIR_2−Red)/(NIR_2+Red)$	| [Goel and Qin 1994](https://link.springer.com/article/10.1007/s12145-021-00673-8#ref-CR11) |
+| Green atmospherically resistant vegetation index 	| $(NIR−[Green−γ×(Blue−Red)])/(NIR+[Green−γ×(Blue−Red)])$	|   | 
+
+### Landsat products
+
+- "analysis ready data" ([ARD](https://www.usgs.gov/landsat-missions/landsat-us-analysis-ready-data)) are level 1, 2 and # data with additional processing to standardize data to tiles for time series
+
+#### Level 1
+
+- all of the preprocessing done 
+- [level 1 products](https://www.usgs.gov/landsat-missions/landsat-level-1-processing-details) after standard processing for geometric distortion and output as geotiffs
+
+#### Level 2 & 3
+
+- [surface reflection](https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-reflectance)
+- [surface temperature](https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-temperature)
+- [spectral indices](https://www.usgs.gov/landsat-missions/landsat-surface-reflectance-derived-spectral-indices) for vegetation, moisture, and more
+- [evapotranspiration](https://www.usgs.gov/landsat-missions/landsat-collection-2-provisional-actual-evapotranspiration-science-product)
+- [additional products](https://www.usgs.gov/landsat-missions/landsat-science-products)
+
+### MODIS products
+
+There are many [downstream data products](https://modis.gsfc.nasa.gov/data/dataprod/) from MODIS satellite data. A few are listed below. 
+
+#### Land Cover Dynamics: 
+
+[MCD12Q1, MCD12C1, MCD12Q2](https://modis.gsfc.nasa.gov/data/dataprod/mod12.php)
+
+The Terra and Aqua combined MODIS Land Cover Dynamics (MCD12Q2) v6.1 
+
+- global land surface phenology metrics at yearly intervals from 2001 to 2021. 
+- time series of the 2-band Enhanced Vegetation Index (EVI2) calculated from MODIS Nadir Bidirectional Reflectance Distribution Function (BRDF)-Adjusted Reflectance (NBAR).  
+- vegetation phenology metrics at 500 meter spatial resolution for up to two detected growing cycles per year. For pixels with more than two valid vegetation cycles, data consists of the total number of vegetation cycles detected for the product year, the onset of greenness, greenup midpoint, maturity, peak greenness, senescence, greendown midpoint, dormancy, EVI2 minimum, EVI2 amplitude, integrated EVI2 over a vegetation cycle, as well as overall and phenology metric-specific quality information. 
+
+*source: [USGS](https://lpdaac.usgs.gov/products/mcd12q2v061/)*
+
+#### Vegetative Index
+
+- NDVI, EVI, vegetative canopy greenness, leaf area, chlorophyll and canopy structure in 16 day interverals that are spatially and temporally consistent
+- [MOD13Q1, MOD13QA1, MOD13QA2, MOD13QC1, MOD13QC1, MOD13QA3, MOD13QC2](https://modis.gsfc.nasa.gov/data/dataprod/mod13.php)
+
+#### Leaf Area Index
+
+> LAI is defined as the one-sided green leaf area per unit ground area in broadleaf canopies and as half the total needle surface area per unit ground area in coniferous canopies. FPAR is the fraction of photosynthetically active radiation (400-700 nm) absorbed by green vegetation. Both variables are used for calculating surface photosynthesis, evapotranspiration, and net primary production, which in turn are used to calculate terrestrial energy, carbon, water cycle processes, and biogeochemistry of vegetation. Algorithm refinements have improved quality of retrievals and consistency with field measurements over all biomes, with a focus on woody vegetation. 
+> [source](https://modis.gsfc.nasa.gov/data/dataprod/mod15.php)
+
+
+#### Gross Primary Productivity 
+
+(& Net Primary Production) 
+
+[Mod17](https://www.umt.edu/numerical-terradynamic-simulation-group/project/modis/mod17.php)
+
+- total growth of terrestial vegegatation
+- uses FPAR, temperature and other meterological data, land cover classification and the biome parameter lookup table
+- looks a 8-day composite of photosynthesis to calculate production and the final product is a cumulative composite of the radition use efficiency model - annually and over 8 days
+
+### Sentinel products
+
+[Setinel products](https://sentinel.esa.int/web/sentinel/missions/sentinel-1/data-products) follow the the level 1-3 designation. 
