@@ -167,20 +167,6 @@ Note that Landsat 4-5 Thematic Mapper and Landsat 7 Enhanced Thematic Mapper Plu
 
 ## Downstream Data
 
-### Vegegative Indices
-
-You can access processed data that has already calculated there, but here are some equations. 
-
-| indices	| formula |	reference |
-| ------|-----------|-----------|
-| Brightness index  |	$Red_2+NIR_2$ |	[Khan et al 2001](https://link.springer.com/article/10.1007/s12145-021-00673-8#ref-CR20) |
-| Soil adjusted vegetation index |	$((1+L)(NIR−Red))/(NIR+Red+L)$	| [Huete 1988](https://link.springer.com/article/10.1007/s12145-021-00673-8#ref-CR17) |
-| Vegetation soil salinity index |	$2Green−5(Red+NIR)$	| [Dehni and Lounis 2012](https://link.springer.com/article/10.1007/s12145-021-00673-8#ref-CR5) |
-| Normalized difference vegetation index |	$(NIR−Red)/(NIR+Red)$	| [Rouse et al. 1974](https://link.springer.com/article/10.1007/s12145-021-00673-8#ref-CR34) |
-| Enhanced vegetation index |	$g×(NIR−Red)/(NIR+C1×Red−C2×Blue+L)$	[Huete et al. 2002](https://link.springer.com/article/10.1007/s12145-021-00673-8#ref-CR18) |
-| Non-linear vegetation index |	$(NIR_2−Red)/(NIR_2+Red)$	| [Goel and Qin 1994](https://link.springer.com/article/10.1007/s12145-021-00673-8#ref-CR11) |
-| Green atmospherically resistant vegetation index 	| $(NIR−[Green−γ×(Blue−Red)])/(NIR+[Green−γ×(Blue−Red)])$	|   | 
-
 ### Landsat products
 
 - "analysis ready data" ([ARD](https://www.usgs.gov/landsat-missions/landsat-us-analysis-ready-data)) are level 1, 2 and # data with additional processing to standardize data to tiles for time series
