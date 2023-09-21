@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://idahoagstats.github.io/AgHackathon/workshops.html</loc>
-    <lastmod>2023-09-20T04:18:18.342Z</lastmod>
+    <lastmod>2023-09-21T21:33:18.117Z</lastmod>
   </url>
   <url>
     <loc>https://idahoagstats.github.io/AgHackathon/signup.html</loc>
-    <lastmod>2023-09-20T04:18:17.250Z</lastmod>
+    <lastmod>2023-09-21T21:33:17.105Z</lastmod>
   </url>
   <url>
     <loc>https://idahoagstats.github.io/AgHackathon/rules.html</loc>
-    <lastmod>2023-09-20T04:18:16.538Z</lastmod>
+    <lastmod>2023-09-21T21:33:16.493Z</lastmod>
   </url>
   <url>
-    <loc>https://idahoagstats.github.io/AgHackathon/index.html</loc>
-    <lastmod>2023-09-20T04:18:15.194Z</lastmod>
+    <loc>https://idahoagstats.github.io/AgHackathon/remote-sensing-resources.html</loc>
+    <lastmod>2023-09-21T21:33:15.281Z</lastmod>
   </url>
   <url>
     <loc>https://idahoagstats.github.io/AgHackathon/about.html</loc>
-    <lastmod>2023-09-20T04:18:14.450Z</lastmod>
+    <lastmod>2023-09-21T21:33:13.817Z</lastmod>
+  </url>
+  <url>
+    <loc>https://idahoagstats.github.io/AgHackathon/index.html</loc>
+    <lastmod>2023-09-21T21:33:14.537Z</lastmod>
   </url>
   <url>
     <loc>https://idahoagstats.github.io/AgHackathon/rubric.html</loc>
-    <lastmod>2023-09-20T04:18:16.046Z</lastmod>
+    <lastmod>2023-09-21T21:33:16.045Z</lastmod>
   </url>
   <url>
     <loc>https://idahoagstats.github.io/AgHackathon/schedule.html</loc>
-    <lastmod>2023-09-20T04:18:16.898Z</lastmod>
+    <lastmod>2023-09-21T21:33:16.817Z</lastmod>
   </url>
   <url>
     <loc>https://idahoagstats.github.io/AgHackathon/topic.html</loc>
-    <lastmod>2023-09-20T04:18:18.010Z</lastmod>
+    <lastmod>2023-09-21T21:33:17.777Z</lastmod>
   </url>
 </urlset>

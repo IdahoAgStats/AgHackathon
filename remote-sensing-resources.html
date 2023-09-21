@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>remote-sensing-resources</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZZST40VXE1"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-ZZST40VXE1', { 'anonymize_ip': true});
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="rwds.css">
+<meta property="og:title" content="remote-sensing-resources">
+<meta property="og:description" content="">
+<meta property="og:site-name" content="2023 Agricultural Hackathon">
+<meta name="twitter:title" content="remote-sensing-resources">
+<meta name="twitter:description" content="">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/hackathon_header.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./topic.html" rel="" target="">
+ <span class="menu-text">Topic</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./workshops.html" rel="" target="">
+ <span class="menu-text">Workshops</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-competition" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Competition</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-competition">    
+        <li>
+    <a class="dropdown-item" href="./schedule.html" rel="" target="">
+ <span class="dropdown-text">Schedule</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./rules.html" rel="" target="">
+ <span class="dropdown-text">Rules</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./rubric.html" rel="" target="">
+ <span class="dropdown-text">rubric</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./signup.html" rel="" target="">
+ <span class="menu-text">Register</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#online-resources" id="toc-online-resources" class="nav-link active" data-scroll-target="#online-resources">Online Resources</a>
+  <ul class="collapse">
+  <li><a href="#learning" id="toc-learning" class="nav-link" data-scroll-target="#learning">Learning</a></li>
+  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources">Data Sources</a></li>
+  </ul></li>
+  <li><a href="#general-notes-on-remotely-sensed-data" id="toc-general-notes-on-remotely-sensed-data" class="nav-link" data-scroll-target="#general-notes-on-remotely-sensed-data">General Notes on Remotely Sensed Data</a>
+  <ul class="collapse">
+  <li><a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing">Data Processing</a></li>
+  </ul></li>
+  <li><a href="#common-preprocessing" id="toc-common-preprocessing" class="nav-link" data-scroll-target="#common-preprocessing">Common preprocessing</a>
+  <ul class="collapse">
+  <li><a href="#atmospheric-correction" id="toc-atmospheric-correction" class="nav-link" data-scroll-target="#atmospheric-correction">Atmospheric correction</a></li>
+  </ul></li>
+  <li><a href="#remotely-sensed-data-sources" id="toc-remotely-sensed-data-sources" class="nav-link" data-scroll-target="#remotely-sensed-data-sources">Remotely Sensed Data Sources</a>
+  <ul class="collapse">
+  <li><a href="#landsat-1" id="toc-landsat-1" class="nav-link" data-scroll-target="#landsat-1">Landsat</a></li>
+  <li><a href="#modis-moderate-resolution-imaging-spectroradiometer" id="toc-modis-moderate-resolution-imaging-spectroradiometer" class="nav-link" data-scroll-target="#modis-moderate-resolution-imaging-spectroradiometer">MODIS (Moderate Resolution Imaging Spectroradiometer)</a></li>
+  <li><a href="#setinel-2" id="toc-setinel-2" class="nav-link" data-scroll-target="#setinel-2">Setinel-2</a></li>
+  </ul></li>
+  <li><a href="#downstream-data" id="toc-downstream-data" class="nav-link" data-scroll-target="#downstream-data">Downstream Data</a>
+  <ul class="collapse">
+  <li><a href="#landsat-products" id="toc-landsat-products" class="nav-link" data-scroll-target="#landsat-products">Landsat products</a></li>
+  <li><a href="#modis-products" id="toc-modis-products" class="nav-link" data-scroll-target="#modis-products">MODIS products</a></li>
+  <li><a href="#sentinel-products" id="toc-sentinel-products" class="nav-link" data-scroll-target="#sentinel-products">Sentinel products</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Remote Sensing Resources</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="online-resources" class="level2">
+<h2 class="anchored" data-anchor-id="online-resources">Online Resources</h2>
+<section id="learning" class="level3">
+<h3 class="anchored" data-anchor-id="learning">Learning</h3>
+<ul>
+<li><a href="https://nptel.ac.in/courses/105108077">Remote Sending Short Course</a></li>
+<li><a href="https://rspatial.org/raster/rs/index.html">rspatial guide</a></li>
+<li><a href="https://soilmapper.org/">predictive soil mapping</a></li>
+<li><a href="https://www.earthdatascience.org/courses/use-data-open-source-python/multispectral-remote-sensing/landsat-in-Python/open-and-crop-data/">multispectral remote sensing data in python</a></li>
+<li><a href="https://registry.opendata.aws/usgs-landsat/index.html">AWS guide and data sets</a></li>
+</ul>
+</section>
+<section id="data-sources" class="level3">
+<h3 class="anchored" data-anchor-id="data-sources">Data Sources</h3>
+<section id="landsat" class="level4">
+<h4 class="anchored" data-anchor-id="landsat">Landsat</h4>
+<ul>
+<li><a href="https://earthexplorer.usgs.gov/">EarthExplorer</a> USGS resource, requires EROS login</li>
+<li><a href="https://glovis.usgs.gov/">GloVis</a> explore LandSat data sets over time, also uses EROS login</li>
+</ul>
+</section>
+<section id="modis" class="level4">
+<h4 class="anchored" data-anchor-id="modis">MODIS</h4>
+<ul>
+<li><a href="https://appeears.earthdatacloud.nasa.gov/">AρρEEARS</a> requires login</li>
+</ul>
+</section>
+<section id="sentinel" class="level4">
+<h4 class="anchored" data-anchor-id="sentinel">Sentinel</h4>
+<ul>
+<li><a href="https://scihub.copernicus.eu/">Copernicus SciHub</a> requires login</li>
+</ul>
+</section>
+<section id="other-landscape-level-data" class="level4">
+<h4 class="anchored" data-anchor-id="other-landscape-level-data">Other Landscape level data</h4>
+<ul>
+<li><a href="https://apps.nationalmap.gov/downloader/">The National Map (v2.0)</a> for accessing DEM data</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="general-notes-on-remotely-sensed-data" class="level2">
+<h2 class="anchored" data-anchor-id="general-notes-on-remotely-sensed-data">General Notes on Remotely Sensed Data</h2>
+<p>Remote sensing concerns <em>passively sensing</em> that relies on the sun itself. It uses information from solar radiation reflected or emitted from the earth’s surface, and hence only works in the daytime (there are some exceptions, but this workshop will not cover that). Since these data are gathered from satellites in the Earth’s orbit, there are frequently quality issues associated with them due to cloud cover, smoke, and other factors that complicate direct usage of raw spectral data from remote sensors.</p>
+<section id="data-processing" class="level3">
+<h3 class="anchored" data-anchor-id="data-processing">Data Processing</h3>
+<p>Remote sensing data typically requires additional preprocessing to ready it for analysis to correct for to rescale data, remove noise, and handle other invalid data points. These data are classified into ordered levels of processing that varies by data provider by overall follows this system:</p>
+<ul>
+<li><p>*<strong>Level 0</strong>: Raw data without any calibration</p></li>
+<li><p><strong>Level 1A</strong>: Raw data bundled with radiometric and geometric calibration coefficients and geolocational information</p></li>
+<li><p><strong>Level 1B</strong>: Radiometric and geometric calibration from Level 1A have been applied (top of atmosphere reflectance)</p></li>
+<li><p><strong>Level 2</strong>: Geophysical parameters (e.g., top of canopy reflectance, surface temp.), application of various transformations and atmospheric corrections</p></li>
+<li><p><strong>Level 3</strong>: Data products (derived from Level 2 data)</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is often quite easier to use one of the many downstream data products produced by the USGS or other agencies. These have completed a level of data preprocessing and cleaning to make the data ready for analysis.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="common-preprocessing" class="level2">
+<h2 class="anchored" data-anchor-id="common-preprocessing">Common preprocessing</h2>
+<section id="digital-numbers-to-meaningful-units" class="level4">
+<h4 class="anchored" data-anchor-id="digital-numbers-to-meaningful-units">Digital numbers to meaningful units</h4>
+<p>This is often done automatically by programs to convert highly compressed data into standard units</p>
+</section>
+<section id="atmospheric-correction" class="level3">
+<h3 class="anchored" data-anchor-id="atmospheric-correction">Atmospheric correction</h3>
+<p>Remove atmospheric effects (i.e.&nbsp;atmospheric ‘haze’), the distortion of solar radiation by the earth’s atmosphere. It’s related to two key features:</p>
+<p><strong>Radiance</strong>: directly measured by remote sensing instruments. how much light the instrument “sees” from the object being observed</p>
+<p><strong>Reflectance</strong>: is the ratio of the amount of light leaving a target to the amount of light striking the target (unitless).</p>
+<section id="topographic-illumination-correction" class="level4">
+<h4 class="anchored" data-anchor-id="topographic-illumination-correction">Topographic illumination correction</h4>
+<p>To adjust for how elevation and orientation can impact measured radiance.</p>
+</section>
+<section id="geolocation-correction" class="level4">
+<h4 class="anchored" data-anchor-id="geolocation-correction">Geolocation correction</h4>
+<p>Orthorectification using DEM and imagery to correct for terrain distortions and scale anomalies.</p>
+<blockquote class="blockquote">
+<p>Orthorectification is the process of removing the effects of image perspective (tilt) and relief (terrain) effects for the purpose of creating a planimetrically correct image. The resultant orthorectified image has a constant scale wherein features are represented in their ‘true’ positions. This allows for the accurate direct measurement of distances, angles, and areas (i.e.&nbsp;mensuration). Orthorectified images are commonly used as in visualization tools such as Google Earth, OSSIM Planet, ArcMap, WMS, etc. . -<a href="https://trac.osgeo.org/ossim/wiki/orthorectification">OSSIM</a></p>
+</blockquote>
+<p>Orthrectification requires (1) an image with accurate sensor geometry; and (2) an elevation model of the ground surface in DEM, DTED, or SRTM format.</p>
+</section>
+<section id="cloud-matching" class="level4">
+<h4 class="anchored" data-anchor-id="cloud-matching">Cloud matching</h4>
+<p>Cloud are cold and have high reflectance in the visible regions electromagnetic spectrum. And the shadows cast by cloud are dark. Based on cloud elevation and sun angle, the cloud shadow position can be determined and accounted for.</p>
+</section>
+<section id="image-mosaicing" class="level4">
+<h4 class="anchored" data-anchor-id="image-mosaicing">Image Mosaicing</h4>
+<p>When stitching together two images, there may be some differences that need to be accounted for</p>
+</section>
+<section id="pansharpening" class="level4">
+<h4 class="anchored" data-anchor-id="pansharpening">Pansharpening</h4>
+<p>Merging high-resolution panchromatic and lower resolution multispectral imagery to create a single high-resolution color image</p>
+</section>
+<section id="quality-layers" class="level4">
+<h4 class="anchored" data-anchor-id="quality-layers">Quality Layers</h4>
+<p>Remote sensing data sources MODIS and Landsat 8 provide metadata regarding quality information at the pixel level. It is encoded in binary format, providding information on cloud likelihood, fill information and other relevaant quality parameters. There are functions written into modern software packages to decode this information.</p>
+</section>
+</section>
+</section>
+<section id="remotely-sensed-data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="remotely-sensed-data-sources">Remotely Sensed Data Sources</h2>
+<p>There are so many! The major ones are Landsat, MODIS, and Sentinel, each described briefly below.</p>
+<section id="landsat-1" class="level3">
+<h3 class="anchored" data-anchor-id="landsat-1">Landsat</h3>
+<p><a href="https://landsat.gsfc.nasa.gov/data/where-to-get-data/">NASA</a> <a href="https://aws.amazon.com/public-data-sets/landsat/">AWS</a> (landsat 1-8)</p>
+<ul>
+<li>longest running remote sensing source</li>
+<li>spatial resolution of 15-60 m</li>
+<li>taken every 16 days, temporal resolution can be increased by using combining satellites (Landsat 8 &amp; 9 orbit are offset, so together they have an 8-day repeat interval)</li>
+<li>Landsat 7: since 1999, 8 spectral bands</li>
+<li>Landsat 8: since 2013, 11 spectral bands</li>
+<li>Landsat 9: since 2021, 11 spectral bands</li>
+</ul>
+<section id="landsat-bands" class="level4">
+<h4 class="anchored" data-anchor-id="landsat-bands">Landsat Bands</h4>
+<p>These consist of multiple spectral bands, each with different uses (e.g.&nbsp;coastal water studies, detecting cirrus clouds, surface temperature)</p>
+<p>The best bands for <a href="https://www.usgs.gov/faqs/what-are-best-landsat-spectral-bands-use-my-research">agriculture</a> in the Landsat 8-9 Operational Land Imager (OLI) and Thermal Infrared Sensor (TIRS):</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Bands</th>
+<th>Wavelengths(<span class="math inline">\(\mu m\)</span>)</th>
+<th>Resolution (<span class="math inline">\(m\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Band 2 - Blue</td>
+<td>0.45 - 0.51</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td>Band 3 - Green</td>
+<td>0.53 - 0.59</td>
+<td>30</td>
+</tr>
+<tr class="odd">
+<td>Band 4 - Red</td>
+<td>0.53 - 0.59</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td>Band 5 - Near Infrared (NIR)</td>
+<td>0.53 - 0.59</td>
+<td>30</td>
+</tr>
+<tr class="odd">
+<td>Band 6 - SWIR 1</td>
+<td>1.57 - 1.65</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td>Band 7 - SWIR 2</td>
+<td>2.11 - 2.29</td>
+<td>30</td>
+</tr>
+</tbody>
+</table>
+<p><em>SWIR = short wave infrared</em></p>
+<p>Other bands:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Bands</th>
+<th>Wavelengths(<span class="math inline">\(\mu m\)</span>)</th>
+<th>Resolution (<span class="math inline">\(m\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Band 1 - Coastal aerosol</td>
+<td>0.43 - 0.45</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td>Band 8 - Panchromatic</td>
+<td>0.50 - 0.68</td>
+<td>15</td>
+</tr>
+<tr class="odd">
+<td>Band 9 - Cirrus</td>
+<td>1.36 - 1.38</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td>Band 10 - TIRS 1</td>
+<td>10.6 - 11.19</td>
+<td>100</td>
+</tr>
+<tr class="odd">
+<td>Band 11 - TIRS 2</td>
+<td>11.50 - 12.51</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+<p>Note that Landsat 4-5 Thematic Mapper and Landsat 7 Enhanced Thematic Mapper Plus have different ranges for each</p>
+</section>
+</section>
+<section id="modis-moderate-resolution-imaging-spectroradiometer" class="level3">
+<h3 class="anchored" data-anchor-id="modis-moderate-resolution-imaging-spectroradiometer">MODIS (Moderate Resolution Imaging Spectroradiometer)</h3>
+<ul>
+<li>most fine-grained resolution data, taken every 24 hours</li>
+<li>there are many ways to access original MODIS data:
+<ul>
+<li><a href="https://modis.gsfc.nasa.gov/tools/">options</a></li>
+<li><a href="https://modis.ornl.gov/globalsubset/">global subset tool</a></li>
+<li><a href="https://modis.ornl.gov/data/modis_webservice.html">API</a></li>
+<li><a href="https://github.com/ornldaac/modis_restservice_qc_filter_R/blob/master/modis_restservice_qc_filter_R.ipynb">r API example</a></li>
+<li><a href="https://github.com/ornldaac/modis_restservice_qc_filter_Python/blob/master/modis_restservice_qc_filter_Python.ipynb">python api example</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="setinel-2" class="level3">
+<h3 class="anchored" data-anchor-id="setinel-2">Setinel-2</h3>
+<blockquote class="blockquote">
+<p>Sentinel-2 (S2) is a wide-swath, high-resolution, multispectral imaging mission with a global 5-day revisit frequency. The S2 Multispectral Instrument (MSI) samples 13 spectral bands: visible and NIR at 10 meters, red edge and SWIR at 20 meters, and atmospheric bands at 60 meters spatial resolution. It provides data suitable for assessing state and change of vegetation, soil, and water cover.<br>
+-<a href="https://developers.google.com/earth-engine/datasets/catalog/sentinel-2">Google Earth</a></p>
+</blockquote>
+<p><a href="https://sen2r.ranghetti.info/">sen2r</a> package and graphical user interface.</p>
+<p><a href="https://www.earthdatascience.org/courses/use-data-open-source-python/multispectral-remote-sensing/landsat-in-Python/open-and-crop-data/">Multispectral remote sensing data in python</a></p>
+</section>
+</section>
+<section id="downstream-data" class="level2">
+<h2 class="anchored" data-anchor-id="downstream-data">Downstream Data</h2>
+<section id="landsat-products" class="level3">
+<h3 class="anchored" data-anchor-id="landsat-products">Landsat products</h3>
+<ul>
+<li>“analysis ready data” (<a href="https://www.usgs.gov/landsat-missions/landsat-us-analysis-ready-data">ARD</a>) are level 1, 2 and # data with additional processing to standardize data to tiles for time series</li>
+</ul>
+<section id="level-1" class="level4">
+<h4 class="anchored" data-anchor-id="level-1">Level 1</h4>
+<ul>
+<li>all of the preprocessing done</li>
+<li><a href="https://www.usgs.gov/landsat-missions/landsat-level-1-processing-details">level 1 products</a> after standard processing for geometric distortion and output as geotiffs</li>
+</ul>
+</section>
+<section id="level-2-3" class="level4">
+<h4 class="anchored" data-anchor-id="level-2-3">Level 2 &amp; 3</h4>
+<ul>
+<li><a href="https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-reflectance">surface reflection</a></li>
+<li><a href="https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-temperature">surface temperature</a></li>
+<li><a href="https://www.usgs.gov/landsat-missions/landsat-surface-reflectance-derived-spectral-indices">spectral indices</a> for vegetation, moisture, and more</li>
+<li><a href="https://www.usgs.gov/landsat-missions/landsat-collection-2-provisional-actual-evapotranspiration-science-product">evapotranspiration</a></li>
+<li><a href="https://www.usgs.gov/landsat-missions/landsat-science-products">additional products</a></li>
+</ul>
+</section>
+</section>
+<section id="modis-products" class="level3">
+<h3 class="anchored" data-anchor-id="modis-products">MODIS products</h3>
+<p>There are many <a href="https://modis.gsfc.nasa.gov/data/dataprod/">downstream data products</a> from MODIS satellite data. A few are listed below.</p>
+<section id="land-cover-dynamics" class="level4">
+<h4 class="anchored" data-anchor-id="land-cover-dynamics">Land Cover Dynamics:</h4>
+<p><a href="https://modis.gsfc.nasa.gov/data/dataprod/mod12.php">MCD12Q1, MCD12C1, MCD12Q2</a></p>
+<p>The Terra and Aqua combined MODIS Land Cover Dynamics (MCD12Q2) v6.1</p>
+<ul>
+<li>global land surface phenology metrics at yearly intervals from 2001 to 2021.</li>
+<li>time series of the 2-band Enhanced Vegetation Index (EVI2) calculated from MODIS Nadir Bidirectional Reflectance Distribution Function (BRDF)-Adjusted Reflectance (NBAR).<br>
+</li>
+<li>vegetation phenology metrics at 500 meter spatial resolution for up to two detected growing cycles per year. For pixels with more than two valid vegetation cycles, data consists of the total number of vegetation cycles detected for the product year, the onset of greenness, greenup midpoint, maturity, peak greenness, senescence, greendown midpoint, dormancy, EVI2 minimum, EVI2 amplitude, integrated EVI2 over a vegetation cycle, as well as overall and phenology metric-specific quality information.</li>
+</ul>
+<p><em>source: <a href="https://lpdaac.usgs.gov/products/mcd12q2v061/">USGS</a></em></p>
+</section>
+<section id="vegetative-index" class="level4">
+<h4 class="anchored" data-anchor-id="vegetative-index">Vegetative Index</h4>
+<ul>
+<li>NDVI, EVI, vegetative canopy greenness, leaf area, chlorophyll and canopy structure in 16 day interverals that are spatially and temporally consistent</li>
+<li><a href="https://modis.gsfc.nasa.gov/data/dataprod/mod13.php">MOD13Q1, MOD13QA1, MOD13QA2, MOD13QC1, MOD13QC1, MOD13QA3, MOD13QC2</a></li>
+</ul>
+</section>
+<section id="leaf-area-index" class="level4">
+<h4 class="anchored" data-anchor-id="leaf-area-index">Leaf Area Index</h4>
+<blockquote class="blockquote">
+<p>LAI is defined as the one-sided green leaf area per unit ground area in broadleaf canopies and as half the total needle surface area per unit ground area in coniferous canopies. FPAR is the fraction of photosynthetically active radiation (400-700 nm) absorbed by green vegetation. Both variables are used for calculating surface photosynthesis, evapotranspiration, and net primary production, which in turn are used to calculate terrestrial energy, carbon, water cycle processes, and biogeochemistry of vegetation. Algorithm refinements have improved quality of retrievals and consistency with field measurements over all biomes, with a focus on woody vegetation. <a href="https://modis.gsfc.nasa.gov/data/dataprod/mod15.php">source</a></p>
+</blockquote>
+</section>
+<section id="gross-primary-productivity" class="level4">
+<h4 class="anchored" data-anchor-id="gross-primary-productivity">Gross Primary Productivity</h4>
+<p>(&amp; Net Primary Production)</p>
+<p><a href="https://www.umt.edu/numerical-terradynamic-simulation-group/project/modis/mod17.php">Mod17</a></p>
+<ul>
+<li>total growth of terrestial vegegatation</li>
+<li>uses FPAR, temperature and other meterological data, land cover classification and the biome parameter lookup table</li>
+<li>looks a 8-day composite of photosynthesis to calculate production and the final product is a cumulative composite of the radition use efficiency model - annually and over 8 days</li>
+</ul>
+</section>
+</section>
+<section id="sentinel-products" class="level3">
+<h3 class="anchored" data-anchor-id="sentinel-products">Sentinel products</h3>
+<p><a href="https://sentinel.esa.int/web/sentinel/missions/sentinel-1/data-products">Setinel products</a> follow the the level 1-3 designation.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><a href="https://github.com/IdahoAgStats/AgHackathon" target="_blank"><img src="https://github.com/IdahoAgStats/AgHackathon/raw/main/images/github-mark-white.png" class="img-fluid" width="70"></a></div>   
+    <div class="nav-footer-center"><a href="https://www.acsmeetings.org/" target="_blank"><img src="https://github.com/IdahoAgStats/AgHackathon/raw/main/images/open_science_logo.png" class="img-fluid" width="250"></a></div>
+    <div class="nav-footer-right"><a href="https://www.deere.com/en/" target="_blank"><img src="https://github.com/IdahoAgStats/AgHackathon/raw/main/images/john_deere_logo.png" class="img-fluid" alt="John Deere Logo" width="200"></a> <a href="https://www.syngenta-us.com/seed/" target="_blank"><img src="https://github.com/IdahoAgStats/AgHackathon/raw/main/images/syngenta_logo_transparent.png" class="img-fluid" alt="Syngenta Seeds Logo" width="200"></a></div>
+  </div>
+</footer>
+
+
+
+</body></html>
