@@ -15,7 +15,7 @@ search: false
 
 - **Soil survey data** 
   - [Workshop slides](soil-survey-and-SOC-stocks.pdf) 
-  - [script for calculating SOC from SSURGO](https://idahoagstats.github.io/AgHackathon/topic.html) | <a href="https://raw.githubusercontent.com/IdahoAgStats/AgHackathon/main/internal/soc-stock-SDA.qmd/" target="_blank">qmd file</a>
+  - [script for calculating SOC from SSURGO](https://idahoagstats.github.io/AgHackathon/topic.html) | <a href="https://raw.githubusercontent.com/IdahoAgStats/AgHackathon/main/internal/soc-stock-SDA.qmd" target="_blank">qmd file</a>
   - [AQP package](http://ncss-tech.github.io/AQP/)
   - [Soil data access tutorial](https://ncss-tech.github.io/AQP/soilDB/SDA-tutorial.html)
   - [Web coverage service for gSSURGO data](http://ncss-tech.github.io/AQP/soilDB/WCS-demonstration-01.html)
