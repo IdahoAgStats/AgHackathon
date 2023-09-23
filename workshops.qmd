@@ -1,7 +1,7 @@
 ---
 pagetitle: workshops
 title: Workshops
-subtitle: "Webinars on accessing public databases"
+subtitle: "Workshops & Tools for accessing public databases"
 search: false
 ---
 
