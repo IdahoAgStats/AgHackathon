@@ -14,14 +14,14 @@ search: false
 
 
 - **Soil survey data** 
-  - [Workshop slides](Pantone: 18-1630 TCX) 
-  - *script from workshop coming soon* 
+  - [Workshop slides](soil-survey-and-SOC-stocks.pdf) 
+  - [script for calculating SOC from SSURGO](https://idahoagstats.github.io/AgHackathon/topic.html) | <a href="https://raw.githubusercontent.com/IdahoAgStats/AgHackathon/main/internal/soc-stock-SDA.qmd/" target="_blank">qmd file</a>
   - [AQP package](http://ncss-tech.github.io/AQP/)
   - [Soil data access tutorial](https://ncss-tech.github.io/AQP/soilDB/SDA-tutorial.html)
   - [Web coverage service for gSSURGO data](http://ncss-tech.github.io/AQP/soilDB/WCS-demonstration-01.html)
   - [Querying soil point data from SSURGO](https://ncss-tech.github.io/AQP/soilDB/SDA-point-query.html)
-  - [RACA dataset](https://www.nrcs.usda.gov/resources/data-and-reports/rapid-carbon-assessment-raca) | [summary](https://www.nrcs.usda.gov/sites/default/files/2022-10/RaCA_Methodology_Sampling_Summary.pdf)  | [data sets](https://nrcs.app.box.com/s/s9bcdroihv1vyre70bkl336cdr13up7q)
-
+  - <a href="https://www.nrcs.usda.gov/resources/data-and-reports/rapid-carbon-assessment-raca" target="_blank">RaCA data</a> | <a href="https://www.nrcs.usda.gov/sites/default/files/2022-10/RaCA_Methodology_Sampling_Summary.pdf" target="_blank">summary</a> |
+  <a href="https://nrcs.app.box.com/s/s9bcdroihv1vyre70bkl336cdr13up7q" target="_blank">data sets</a> 
 
 - **Remote sensing** | [resources for newbies](remote-sensing-resources.qmd)
 
