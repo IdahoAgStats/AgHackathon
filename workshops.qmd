@@ -13,8 +13,15 @@ search: false
 - **Weather Data from DAYMET & NASA POWER** | [Video](https://youtu.be/r38NfwZcZPQ) | [scripts](https://github.com/adriancorrendo/AgrometR/)
 
 
-- **Soil survey data** | link to slides coming soon | [additional resources](http://ncss-tech.github.io/AQP/)
+- **Soil survey data** 
+  - [Workshop slides](Pantone: 18-1630 TCX) 
+  - *script from workshop coming soon* 
+  - [AQP package](http://ncss-tech.github.io/AQP/)
+  - [Soil data access tutorial](https://ncss-tech.github.io/AQP/soilDB/SDA-tutorial.html)
+  - [Web coverage service for gSSURGO data](http://ncss-tech.github.io/AQP/soilDB/WCS-demonstration-01.html)
+  - [Querying soil point data from SSURGO](https://ncss-tech.github.io/AQP/soilDB/SDA-point-query.html)
+  - [RACA dataset](https://www.nrcs.usda.gov/resources/data-and-reports/rapid-carbon-assessment-raca) | [summary](https://www.nrcs.usda.gov/sites/default/files/2022-10/RaCA_Methodology_Sampling_Summary.pdf)  | [data sets](https://nrcs.app.box.com/s/s9bcdroihv1vyre70bkl336cdr13up7q)
 
 
-- **[Remote sensing resources](remote-sensing-resources.qmd)**
+- **Remote sensing** | [resources for newbies](remote-sensing-resources.qmd)
 
