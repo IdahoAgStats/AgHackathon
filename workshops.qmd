@@ -23,5 +23,7 @@ search: false
   - <a href="https://www.nrcs.usda.gov/resources/data-and-reports/rapid-carbon-assessment-raca" target="_blank">RaCA data</a> | <a href="https://www.nrcs.usda.gov/sites/default/files/2022-10/RaCA_Methodology_Sampling_Summary.pdf" target="_blank">summary</a> |
   <a href="https://nrcs.app.box.com/s/s9bcdroihv1vyre70bkl336cdr13up7q" target="_blank">data sets</a> 
 
+- [NCSS lab data resources](https://ncsslabdatamart.sc.egov.usda.gov/)
+
 - **Remote sensing** | [resources for newbies](remote-sensing-resources.qmd)
 
