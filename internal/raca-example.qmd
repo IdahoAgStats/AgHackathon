@@ -1,0 +1,204 @@
+---
+title: "Using RaCA Data"
+date: "`r Sys.Date()`"
+author: "Julia Piaskowski" 
+
+# ideas on formatting: https://urldefense.com/v3/__https://raw.githubusercontent.com/quarto-dev/quarto-gallery/main/page-layout/tufte.qmd__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1lVm_UaoQ$ 
+
+# for some reason cannot re-define within cells
+# https://urldefense.com/v3/__https://quarto.org/docs/reference/cells/cells-knitr.html__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1mz-nTtrg$ 
+fig-format: retina
+code-overflow: wrap
+code-block-bg: "#F7F7F7"
+fig-align: center
+fontsize: 11pt
+
+format:
+    html: 
+      embed-resources: true
+      toc: true
+      toc-location: left
+      grid: 
+        margin-width: 350px
+
+reference-location: margin
+citation-location: margin
+
+#bibliography: references.bib
+---
+
+## Introduction
+
+This is an example of how to access RaCA data for a given area. The [RaCA (rapid carbon assessment)](https://www.nrcs.usda.gov/resources/data-and-reports/rapid-carbon-assessment-raca) is a rather special dataset created by the NRCS to describe soil organic carbon across the continental United States (i.e. the "lower 48"). It is technically point data describing a pedon (the smallest unit describing soil), but most members of the public can only access this data set using "general" latitude and longitude, that is, low resolution geocoordinates with a radius of approximately 0.55 km around them. I recommend you read the first few pages of the [RaCA summary](https://www.nrcs.usda.gov/sites/default/files/2022-10/RaCA_Methodology_Sampling_Summary.pdf) to learn more about this data set if you plan to use it. 
+
+## Example
+
+I downloaded all RaCa data from [here](https://nrcs.app.box.com/s/s9bcdroihv1vyre70bkl336cdr13up7q)
+
+### Target Region
+
+The [Snake River Plain](https://en.wikipedia.org/wiki/Snake_River_Plain) is a region across Southern Idaho with a largely common geological history, soils and climate. It is also a region of high agricultural productivity. The Snake River Plain is also underlaid by a very large aquifer, whose boundaries will be used in this tutorial for defining the area of interest for soil organic carbon (hereafter "SOC"). 
+
+![](images/snake-river-plain.jpg){width=80%}
+
+The shapefile was downloaded [here](https://www.arcgis.com/home/item.html?id=4173fbfce6aa4c13b903084a6a7094dc) from [State of Idaho ArcGIS hub](https://gis-idaho.hub.arcgis.com/documents/IDWR::snake-plain-aquifer-1/about). The area in this shapefile is just over 10 million acres. So, it's actually a *massive* area, covering a very large chunk of the arable land in Southern Idaho.  It is composed of an east and a west side, which are approximately 70% and 30% of the total aquifer land area, respectively. The geological history of the land is not uniform. On the eastern side is [Craters of the Moon National Monument](https://www.nps.gov/crmo/index.htm), a stunningly beautiful, yet extremely barren region due to (geologically speaking) very recent lava flows. Craters of the moon is an area of considerably different geological history, soil type, and undoubtedly, SOC status than the surrounding area. Thus this is an imperfect shape file to describe the actual target region of arable land of the Snake River Plain, but let us carry on regardless. 
+
+![](images/snake-river-plain-geology.png)
+#### Load data
+```{r}
+library(sf)
+
+snake_poly <- st_read("data/snakeaq/snakeaq.shp") %>% 
+  dplyr::select(geometry) %>% st_union() %>% 
+  #st_transform(crs = 8826) %>% 
+  st_transform(crs = "+proj=longlat +datum=NAD83") 
+
+# the shape file defined the Eastern and Western portions, which were merged into one
+# the geocoordinates were transformed from metric points into latitude and longitude coordinates using a projection for the Pacific Northwest region of North American
+```
+
+Plot it to make sure it is okay. 
+
+```{r}
+plot(snake_poly)
+```
+
+It looks as expected. 
+
+
+### The RaCA Data
+
+All data were downloaded from [here](https://nrcs.app.box.com/s/s9bcdroihv1vyre70bkl336cdr13up7q). 
+
+```{r, include=FALSE, message=FALSE}
+library(sf)
+library(dplyr)
+library(ggplot2); library(maps)
+```
+
+Load the locations file. It provides a general location (only two decimals points of the geocoordinates, roughly equal to a 0.5 km radius). 
+
+```{r}
+raca_locs <- read.csv("data/RaCA/raca_general_location.csv") %>% 
+  rename(raca_id = 'RaCA_Id', long = "Gen_long", lat = "Gen_lat") %>% 
+  distinct() # removing a duplicate row
+
+# Find locations with duplicate geocoordinates (there is one)
+raca_loc_dups <- raca_locs %>% group_by(raca_id) %>% 
+  mutate(count = n()) %>% ungroup() %>% 
+  filter(count > 1)
+
+# Filter out duplicated locations (since we don't know which one is correct)
+raca_locs_filt <- anti_join(raca_locs, raca_loc_dups, by = "raca_id") 
+```
+
+Load the sample data
+```{r}
+# original sample data
+raca_samples <- read.csv("data/RaCA/raca_samples.csv") %>% 
+  rename(raca_id = "rcasiteid")
+
+# pedon summarized data
+raca_pedon <- read.csv("data/RaCA/raca_SOC_pedons.csv")  %>% 
+  rename(raca_id = "rcasiteid")
+```
+
+Filter data to observations with matching location data.
+
+```{r}
+raca_ped_filt <- inner_join(raca_locs_filt, raca_pedon, by = join_by(raca_id)) 
+
+raca_samp_filt <- inner_join(raca_locs_filt, raca_samples, by = join_by(raca_id))
+```
+
+#### Look at the all the data
+```{r}
+us <- map_data("state")
+
+ggplot(raca_locs_filt, aes(x = long, y = lat)) +
+  geom_polygon(data = us, aes(group = group), fill = "transparent", color = "grey50") +
+  geom_point(alpha = 0.5, col = "navy") +
+  coord_map() +
+  xlab("longitude") + ylab("latitude") + 
+  ggtitle("RaCA site locations") + 
+  theme_linedraw()
+```
+Hey, this looks like the map provided in the [RaCA summary](https://www.nrcs.usda.gov/sites/default/files/2022-10/RaCA_Methodology_Sampling_Summary.pdf)! 
+
+### Combine data sets
+
+Filter RaCA data set to only those observations that are within the bounds of the Snake River Aquifer shape file. This example is using the RaCA pedon file, transforming it into a ***[sf](https://r-spatial.github.io/sf/)*** object that is combined with the Snake River shape file. 
+
+1. First, turn the RaCA pedon dataset into a spatial 'sf' object: 
+```{r}
+raca_sf <-st_as_sf(raca_ped_filt, coords = c("long", "lat"), 
+                   crs = "NAD83") 
+# the CRS must match that of the snake river polygon
+# 8826 is EPGS, which works for the continental US
+# NAD83 works for the Pacific Northwest, where this is located
+```
+
+2. Next, filter the samples to those within the target polygon. This example is only for the 'pedon' file, but this and the proceding step could be repeated for the sample file. 
+```{r}
+snake_pedon <- st_filter(raca_sf, snake_poly)  
+```
+
+There are 43 observations from RaCA that fall within this Snake River Plain shapefile. A region spanning 10 million acres has 43 data point for SOC, which is roughly 1 point for every 232,000 acres. However, these points are not evenly distributed across the landscape. 
+
+#### Land use
+
+Within these samples, we can also count land use types for the locations:
+```{r}
+table(snake_pedon$LU)
+```
+
+C = cropland
+P = pastureland
+R = rangeland
+W = wetland
+
+### Plot the data
+
+*SOC stocks to 100 cm*: The detail on how this is calculated is included in the [RaCA report](https://www.nrcs.usda.gov/sites/default/files/2022-10/raca_Methodology_Sampling_Summary.pdf). 
+
+In this data set, SOC to 1 meter has many very low values and a long tail of some very high values. This is better visualised on the log scale:
+
+```{r}
+par(mfrow=c(1,2))
+hist(raca_ped_filt$SOCstock100, main = NA, xlab = "SOC at 1 m")
+hist(log(raca_ped_filt$SOCstock100), main = NA, xlab = "log SOC at 1 m")
+par(mfrow=c(1,1))
+```
+
+```{r}
+ggplot(snake_poly) +
+  geom_sf(alpha = 0.3) +
+  geom_sf(snake_pedon, mapping = aes(color = log(SOCstock100)), alpha = 0.8) +
+  guides(color = guide_legend(title="SOC (Mg/ha)")) + 
+  coord_sf() +
+  labs(title = "RaCA SOC to 1 meter", subtitle = "Snake River Plain") + 
+  theme_linedraw() + 
+  theme(legend.position = "bottom")
+```
+
+### Redefine locations as polygons
+
+The RaCA locations we can access are approximate, and the true location may be up to 0.55 km away from its listed geocoordinates (see [xkcd](https://xkcd.com/2170/) cartoon for more on geospatial coordinates and resolution). 
+
+Here is code to transform those points into small circular polygons. The function `sf::st_buffer is used` to create polygons 0.55 km in diameter around each point. 
+
+```{r}
+# first transform projection into meters
+snake_utm <- st_transform(snake_pedon, "+proj=utm +zone=11") 
+  # Southern Idaho is technically in 2 zones (11 & 12), but a slim majority of the total land area is in zone 11
+
+# create the circular polygon
+snake_utm_circles <- st_buffer(snake_utm, 550)
+
+# reproject back to NAD83
+snake_circles <- st_transform(snake_utm_circles, "+proj=longlat +datum=NAD83")
+```
+
+For plotting at the scale used previously (covering all of Southern Idaho, see above for an example), the results won't look different, (in fact, the points will be smaller because ggplot is now plotting polygons to scale) but this will impact downstream modelling. 
+
+
