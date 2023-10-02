@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Guidelines</title>
+<title>test-data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,11 +72,11 @@ gtag('config', 'G-ZZST40VXE1', { 'anonymize_ip': true});
 
 
 <link rel="stylesheet" href="rwds.css">
-<meta property="og:title" content="Guidelines">
-<meta property="og:description" content="Process and Rules">
+<meta property="og:title" content="test-data">
+<meta property="og:description" content="">
 <meta property="og:site-name" content="2023 Agricultural Hackathon">
-<meta name="twitter:title" content="Guidelines">
-<meta name="twitter:description" content="Process and Rules">
+<meta name="twitter:title" content="test-data">
+<meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -159,10 +159,7 @@ gtag('config', 'G-ZZST40VXE1', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-big-picture" id="toc-the-big-picture" class="nav-link active" data-scroll-target="#the-big-picture">The Big Picture</a></li>
-  <li><a href="#teams" id="toc-teams" class="nav-link" data-scroll-target="#teams">Teams</a></li>
-  <li><a href="#process" id="toc-process" class="nav-link" data-scroll-target="#process">Process</a></li>
-  <li><a href="#judging" id="toc-judging" class="nav-link" data-scroll-target="#judging">Judging</a></li>
+  <li><a href="#the-two-realities-of-soil-data" id="toc-the-two-realities-of-soil-data" class="nav-link active" data-scroll-target="#the-two-realities-of-soil-data">The Two Realities of Soil Data</a></li>
   </ul>
 </nav>
     </div>
@@ -171,8 +168,7 @@ gtag('config', 'G-ZZST40VXE1', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hackathon Guidelines</h1>
-<p class="subtitle lead">Process and Rules</p>
+<h1 class="title">Why There is No Test Data</h1>
 </div>
 
 
@@ -187,39 +183,18 @@ gtag('config', 'G-ZZST40VXE1', { 'anonymize_ip': true});
 
 </header>
 
-<section id="the-big-picture" class="level2">
-<h2 class="anchored" data-anchor-id="the-big-picture">The Big Picture</h2>
-<p>Once the hackathon topic is known, each team should define their target question. This may be the entire topic itself or it may be a smaller aspect of the main topic, but it needs to fit within the umbrella topic. Teams will assembly data and conduct an analysis with that data that helps them address the central question they have defined. Each team should summarize their findings and the impact of those findings with respect to their target question.</p>
-</section>
-<section id="teams" class="level2">
-<h2 class="anchored" data-anchor-id="teams">Teams</h2>
+<p>Often Hackathons are accompanied by a test data set that participants can use to determine the accuracy of prediction. This Hackathon does not have a testing data set because one does not exist. This is part of the overall challenge of estimating soil carbon and explained in more detail below.</p>
+<p>However, we have added a few resources to the website that cover how to access some existing <a href="./resources.html">soil carbon estimates</a>, including examples on how to <a href="https://ncss-tech.github.io/AQP/soilDB/SDA-point-query.html">access data from SSURGO</a>, how to <a href="https://idahoagstats.github.io/AgHackathon/soc-stock-SDA.html">calculate soil organic carbon</a> and how to access <a href="https://idahoagstats.github.io/AgHackathon/raca-example.html">RaCA (rapid carbon assessment) data</a>.</p>
+<section id="the-two-realities-of-soil-data" class="level2">
+<h2 class="anchored" data-anchor-id="the-two-realities-of-soil-data">The Two Realities of Soil Data</h2>
+<p>Soil properties such as organic carbon can be understood through two versions of reality, defined by some level of generalization for each. Soil properties are incredibly variable across a landscape and with depth. It isn’t unusual for soil organic carbon to vary by an order of magnitude or more from water shedding to water collecting portions of a farmer’s field, or between topsoil and subsoil. Since it isn’t possible to excavate and quantify soil properties within every cubic inch of soil down to bedrock contact, some form of estimation has to be used. Estimation, a generalization of soil variability, is typically performed at two “scales”:</p>
 <ol type="1">
-<li><p>Teams must be composed of 2 to 4 graduate students.</p></li>
-<li><p>Teams can be composed of people from different institutions or from the same institution.</p></li>
-<li><p>All teams members must be graduate students and must be registered for the 2023 ASA-CSSA-SSSA annual meetings. People or teams who are virtual attendees may compete (but each person must be registered for the meetings).</p></li>
-<li><p>Teams can be formed independently or you may put your name in as a ‘free agent’ to be paired with other free agents.</p></li>
-<li><p>There are no rules on team composition. We recommend a balanced team with regard to domain expertise and skill set. We also recommend that between the team members, there is expertise in (1) data curation, (2) data analysis, and (3) data visualization, but there is flexibility in this realm. Not every single person on the team needs to be accomplished in all recommended areas of knowledge! This is a team competition, after all.</p></li>
-<li><p>All team members must <a href="./signup.html">register</a> by the deadline: August 31, 2023 at Midnight (All Time Zones).</p></li>
+<li>point data (within a single soil profile); and<br>
+</li>
+<li>aggregated over an area (within a soil map unit delineation).</li>
 </ol>
-</section>
-<section id="process" class="level2">
-<h2 class="anchored" data-anchor-id="process">Process</h2>
-<ol type="1">
-<li><p>Teams are welcome to use any <strong>public</strong> data source to address their target question. We will introduce several public data sources in pre-hackathon webinars. Teams are neither penalized nor rewarded for using data sources outside of those we introduce, but these data sources must be <em>publically</em> available to everyone. If data are behind a paywall, they are not available sufficiently public for this competition. Data requiring an permissions such as API key are public so long as this is a free resource that anyone can obtain. The appropriateness of the data source to the questions each teams focuses on is part of the judging criteria (see the <a href="./rubric.html">judging rubric</a> for more information).</p></li>
-<li><p>Teams may consult any resources regarding their work, including peer-reviewed literature and other professionals in the field. When consulting with individuals, please do not abuse this. Other folks can give insight and advice, but they should not be coding anything, producing any outputs, providing the central ideas, or otherwise acting in a leadership capacity in any particular AgHackathon team. This is a time for students to shine.</p></li>
-<li><p>Students are also welcome to use any statistical software, programming language, data visualization and graphical software they want to accomplish their aims. Software used in the compeition is not required to be open source.</p></li>
-<li><p>After the topic is unveiled, teams may work on this topic at their discretion from the unveiling up until their final presentation.</p></li>
-</ol>
-</section>
-<section id="judging" class="level2">
-<h2 class="anchored" data-anchor-id="judging">Judging</h2>
-<ol type="1">
-<li><p>The top 8 teams will present their final results at the Hackathon oral session to be held Wednesday, November 01 at the Annual Meetings. Judging will be based on what is presented, following the <a href="./rubric.html">competition rubric</a>.</p></li>
-<li><p>The only exception to the previous rule is regarding transparency of each team’s work. This will be evaluated based on what is placed on a dedicated public git repository on a git cloud hosting service (e.g.&nbsp;<a href="https://github.com/" target="_blank">GitHub</a>, <a href="https://about.gitlab.com/" target="_blank">GitLab</a>, <a href="https://bitbucket.org" target="_blank">Bitbucket</a>). Teams are not required to use git or a git hosting service for collaboration between team members; they are only required to upload their final processes to public git hosting service (such as any of the aforementioned services: GitHub, GitLab, or Bitbucket).</p></li>
-<li><p>Involving all team members in the final presentation is encouraged, but it is not required. Team balance of the final presentation will not impact the team score. Teams which do not present automatically forfeit .</p></li>
-<li><p>Judging will be conducted by 3 to 5 experts following <a href="./rubric.html">the competition rubric</a>.</p></li>
-<li><p>Awards will be based on the top 3 point scorers. In the event of ties, the judges will decide through consensus.</p></li>
-</ol>
+<p>Point data represent a particular location in space that has been excavated, soil morphology described, and sampled for laboratory characterization-perhaps describing a 3x3 foot area excavated to 4-6 foot depth. It is best understood as a measurement, one that accurately describes the point from which it is taken. There are well over 80,000 points where laboratory measurements have been taken and form an important part of the foundation upon which the U.S. Soil Survey is built. But, overall, these points are sparsely dotted across the United States, because this is a big country and laboratory sampling is expensive. The <a href="https://ncsslabdatamart.sc.egov.usda.gov">NCSS Laboratory Characterization Database</a> is based on samples gathered over many decades by various organizations, and possibly for many different objectives. Some of these data are incomplete, perhaps only composed of the upper soil horizons, while other data that span all soil horizons may be missing specific characterization data such as bulk density, cation exchange capacity, or optical sand grain counts.</p>
+<p>The spatial and tabular data delivered via <a href="https://websoilsurvey.nrcs.usda.gov/app/">Web Soil Survey</a> (also known as SSURGO) are referred to as aggregated data. This version of reality (more generalized) of soil data relies on extensive field investigation, point data, and tacit models of “soil landscape relationships” to build a continuous fabric of soil geography. The level of generalization for any given area (“soil survey order” or “level of investigation”) is dependent on expected land use decisions (e.g.&nbsp;intensive farming vs.&nbsp;rangeland) and available resources (staff and time). The order of mapping gives an indication of how collections of soils are grouped within a soil mapping unit (e.g.&nbsp;conceptual generalization) and an approximate minimum mapping unit (e.g.&nbsp;spatial generalization). See chapter 4 of the <a href="https://www.nrcs.usda.gov/sites/default/files/2022-09/SSM-ch4.pdf">Soil Survey Manual</a> for a much more detailed accounting of survey order. Aggregate soil survey data, unlike point data, is far more complete in terms of space and available data elements, and covers most of the United States. However, the spatial and conceptual generalization of these data can be too coarse to resolve fine details within small areas (&lt;2-10 acres, depending on survey order).</p>
 
 
 </section>
