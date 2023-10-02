@@ -1,0 +1,21 @@
+---
+pagetitle: test-data
+title: Why There is No Test Data 
+search: false
+---
+
+Often Hackathons are accompanied by a test data set that participants can use to determine the accuracy of prediction. This Hackathon does not have a testing data set because one does not exist. This is part of the overall challenge of estimating soil carbon and explained in more detail below.  
+
+However, we have added a few resources to the website that cover how to access some existing [soil carbon estimates](resources.qmd), including  examples on how to [access data from SSURGO](https://ncss-tech.github.io/AQP/soilDB/SDA-point-query.html), how to [calculate soil organic carbon](https://idahoagstats.github.io/AgHackathon/soc-stock-SDA.html) and how to access [RaCA (rapid carbon assessment) data](https://idahoagstats.github.io/AgHackathon/raca-example.html). 
+
+
+## The Two Realities of Soil Data
+
+Soil properties such as organic carbon can be understood through two versions of reality, defined by some level of generalization for each. Soil properties are incredibly variable across a landscape and with depth. It isn't unusual for soil organic carbon to vary by an order of magnitude or more from water shedding to water collecting portions of a farmer's field, or between topsoil and subsoil. Since it isn't possible to excavate and quantify soil properties within every cubic inch of soil down to bedrock contact, some form of estimation has to be used. Estimation, a generalization of soil variability, is typically performed at two "scales":
+
+  1. point data (within a single soil profile); and   
+  1. aggregated over an area (within a soil map unit delineation). 
+
+Point data represent a particular location in space that has been excavated, soil morphology described, and sampled for laboratory characterization-perhaps describing a 3x3 foot area excavated to 4-6 foot depth. It is best understood as a measurement, one that accurately describes the point from which it is taken. There are well over 80,000 points where laboratory measurements have been taken and form an important part of the foundation upon which the U.S. Soil Survey is built. But, overall, these points are sparsely dotted across the United States, because this is a big country and laboratory sampling is expensive. The [NCSS Laboratory Characterization Database](https://ncsslabdatamart.sc.egov.usda.gov) is based on samples gathered over many decades by various organizations, and possibly for many different objectives. Some of these data are incomplete, perhaps only composed of the upper soil horizons, while other data that span all soil horizons may be missing specific characterization data such as bulk density, cation exchange capacity, or optical sand grain counts.  
+
+The spatial and tabular data delivered via [Web Soil Survey](https://websoilsurvey.nrcs.usda.gov/app/) (also known as SSURGO) are referred to as aggregated data. This version of reality (more generalized) of soil data relies on extensive field investigation, point data, and tacit models of "soil landscape relationships" to build a continuous fabric of soil geography. The level of generalization for any given area ("soil survey order" or "level of investigation") is dependent on expected land use decisions (e.g. intensive farming vs. rangeland) and available resources (staff and time). The order of mapping gives an indication of how collections of soils are grouped within a soil mapping unit (e.g. conceptual generalization) and an approximate minimum mapping unit (e.g. spatial generalization). See chapter 4 of the [Soil Survey Manual](https://www.nrcs.usda.gov/sites/default/files/2022-09/SSM-ch4.pdf) for a much more detailed accounting of survey order. Aggregate soil survey data, unlike point data, is far more complete in terms of space and available data elements, and covers most of the United States. However, the spatial and conceptual generalization of these data can be too coarse to resolve fine details within small areas (<2-10 acres, depending on survey order).

@@ -22,7 +22,11 @@ website:
     collapse-below: lg
     right:
       - text: "Topic"
-        href: topic.qmd
+        menu: 
+        - text: "Challenge Question"
+          href: topic.qmd
+        - text: "Test Data"
+          href: test-data.qmd
       - text: "Resources"
         href: resources.qmd
       - text: "Competition"
