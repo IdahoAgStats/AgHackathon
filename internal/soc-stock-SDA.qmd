@@ -3,10 +3,10 @@ title: "SOC Stocks via Soil Data Access"
 author: D.E. Beaudette
 date: "`r Sys.Date()`"
 
-# ideas on formatting: https://urldefense.com/v3/__https://raw.githubusercontent.com/quarto-dev/quarto-gallery/main/page-layout/tufte.qmd__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1lVm_UaoQ$ 
+# ideas on formatting: https://urldefense.com/v3/__https://raw.githubusercontent.com/quarto-dev/quarto-gallery/main/page-layout/tufte.qmd__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV8j89NR9Q$ 
 
 # for some reason cannot re-define within cells
-# https://urldefense.com/v3/__https://quarto.org/docs/reference/cells/cells-knitr.html__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1mz-nTtrg$ 
+# https://urldefense.com/v3/__https://quarto.org/docs/reference/cells/cells-knitr.html__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV-uVuwoJw$ 
 fig-format: retina
 code-overflow: wrap
 code-block-bg: "#F7F7F7"
@@ -29,7 +29,7 @@ bibliography: references.bib
 
 # Introduction
 
-This document demonstrates how to compute estimated soil organic carbon (SOC) stocks from the [detailed U.S. Soil Survey data (SSURGO)](https://urldefense.com/v3/__https://www.nrcs.usda.gov/resources/data-and-reports/soil-survey-geographic-database-ssurgo__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1nwilCFwQ$ ) using the [Soil Data Access (SDA) API](https://urldefense.com/v3/__https://sdmdataaccess.nrcs.usda.gov/__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1lwtmxd8g$ ). The SDA API can be used from any software capable of sending REST-style requests formatted as JSON, and processing results returned as JSON. Queries that return spatial data are encoded as well known text (WKT). Queries to SDA are limited to returning 100,000 rows and 64MB of serialized data.
+This document demonstrates how to compute estimated soil organic carbon (SOC) stocks from the [detailed U.S. Soil Survey data (SSURGO)](https://urldefense.com/v3/__https://www.nrcs.usda.gov/resources/data-and-reports/soil-survey-geographic-database-ssurgo__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV_FZgPBRw$ ) using the [Soil Data Access (SDA) API](https://urldefense.com/v3/__https://sdmdataaccess.nrcs.usda.gov/__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV_Isw83qA$ ). The SDA API can be used from any software capable of sending REST-style requests formatted as JSON, and processing results returned as JSON. Queries that return spatial data are encoded as well known text (WKT). Queries to SDA are limited to returning 100,000 rows and 64MB of serialized data.
 
 
 ## SOC Stock Estimation
@@ -59,44 +59,44 @@ where $soc$, $z$, $D_{b}$, and $cf$ are measurements (or estimates) associated w
 
 ![A graphical description of how a SOC stock is calculated for a soil profile with 5 horizons. Values below variables represent typical measurements associated with various genetic soil horizons.](soc-calculation-example-with-values.png){fig-align="center" fig-alt="A skematic diagram relating SOC stock calculation, an example soil profile, and typical values for soil organic carbon mass percent, horizon thickness, coarse fraction volume, and bulk density."}
 
-A detailed overview of measuring soil carbon can be found in this [FAO Report](https://urldefense.com/v3/__https://www.fao.org/3/cb0509en/CB0509EN.pdf__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1nkqkn1ZA$ ).
+A detailed overview of measuring soil carbon can be found in this [FAO Report](https://urldefense.com/v3/__https://www.fao.org/3/cb0509en/CB0509EN.pdf__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV-Ur2fiVw$ ).
 
-The [Rapid Carbon Assessment](https://urldefense.com/v3/__https://www.nrcs.usda.gov/resources/data-and-reports/rapid-carbon-assessment-raca__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1mpSTuEOQ$ ) project documentation, database, and related publications are a good source of information on the topic.
+The [Rapid Carbon Assessment](https://urldefense.com/v3/__https://www.nrcs.usda.gov/resources/data-and-reports/rapid-carbon-assessment-raca__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV9Vk-X-BA$ ) project documentation, database, and related publications are a good source of information on the topic.
 
 
 ## Effective use of Soil Data Access
 Queries to SDA work best when there is a clearly defined set of associated records ("tabular data"), possibly defined by a soil survey area symbol, set of map unit names, set of map unit keys, set of component names, or spatial "area of interest" defined by a simple geometric shape (point, line, or polygon).
 
-Those familiar with [MS SQL](https://urldefense.com/v3/__https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql?view=sql-server-ver16__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1mm-3DsoA$ ) may want to write their own queries and submit directly to SDA. The [{soilDB}](https://urldefense.com/v3/__https://cran.r-project.org/package=soilDB__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1ktB_27ZQ$ ) package for R provides a number of convenient functions for simplifying interaction with SDA and related web services. Some of these functions include:
+Those familiar with [MS SQL](https://urldefense.com/v3/__https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql?view=sql-server-ver16__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV-49J7n3A$ ) may want to write their own queries and submit directly to SDA. The [{soilDB}](https://urldefense.com/v3/__https://cran.r-project.org/package=soilDB__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV9UR-Ui_g$ ) package for R provides a number of convenient functions for simplifying interaction with SDA and related web services. Some of these functions include:
 
-  * [`SDA_query()`](https://urldefense.com/v3/__http://ncss-tech.github.io/soilDB/reference/SDA_query.html__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1mEwRkPOw$ ): submit queries (MS SQL dialect of SQL) to SDA; results as a `data.frame` object
+  * [`SDA_query()`](https://urldefense.com/v3/__http://ncss-tech.github.io/soilDB/reference/SDA_query.html__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV8xC2cSUA$ ): submit queries (MS SQL dialect of SQL) to SDA; results as a `data.frame` object
   
-  * [`SDA_spatialQuery()`](https://urldefense.com/v3/__http://ncss-tech.github.io/soilDB/reference/SDA_spatialQuery.html__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1kEZ4uoWg$ ): submit spatial queries to SDA using common R spatial data types ({sf}, {terra}); results could be a `data.frame` or spatial data
+  * [`SDA_spatialQuery()`](https://urldefense.com/v3/__http://ncss-tech.github.io/soilDB/reference/SDA_spatialQuery.html__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV9tECU-ow$ ): submit spatial queries to SDA using common R spatial data types ({sf}, {terra}); results could be a `data.frame` or spatial data
   
-  * [`fetchSDA()`](https://urldefense.com/v3/__https://ncss-tech.github.io/soilDB/reference/fetchSDA.html__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1l_NAbirA$ ): submit a query to SDA via specified "WHERE clause"; results are [`SoilProfileCollection` provided by the {aqp} package](https://urldefense.com/v3/__http://ncss-tech.github.io/aqp/articles/Introduction-to-SoilProfileCollection-Objects.html__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1lEhzGc1Q$ )
+  * [`fetchSDA()`](https://urldefense.com/v3/__https://ncss-tech.github.io/soilDB/reference/fetchSDA.html__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV9nKcGWeQ$ ): submit a query to SDA via specified "WHERE clause"; results are [`SoilProfileCollection` provided by the {aqp} package](https://urldefense.com/v3/__http://ncss-tech.github.io/aqp/articles/Introduction-to-SoilProfileCollection-Objects.html__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV_2eMhHvg$ )
   
-  * [`fetchSDA_spatial()`](https://urldefense.com/v3/__https://ncss-tech.github.io/soilDB/reference/fetchSDA_spatial.html__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1nvfYiD0g$ ): submit a vector of map unit keys to SDA; results are spatial data (map unit polygons, bounding-boxes, convex hulls, etc.)
+  * [`fetchSDA_spatial()`](https://urldefense.com/v3/__https://ncss-tech.github.io/soilDB/reference/fetchSDA_spatial.html__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV-bNuwBAA$ ): submit a vector of map unit keys to SDA; results are spatial data (map unit polygons, bounding-boxes, convex hulls, etc.)
   
-  * [`mukey.wcs()`](https://urldefense.com/v3/__https://ncss-tech.github.io/soilDB/reference/mukey.wcs.html__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1mAqx_Lrg$ ): submit a web coverage service (WCS) request (by bounding-box) for gridded map unit key data, provided by SoilWeb; results are {terra} `SpatRaster` objects
+  * [`mukey.wcs()`](https://urldefense.com/v3/__https://ncss-tech.github.io/soilDB/reference/mukey.wcs.html__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV9itjkS9w$ ): submit a web coverage service (WCS) request (by bounding-box) for gridded map unit key data, provided by SoilWeb; results are {terra} `SpatRaster` objects
 
-The [{soilDB} documentation](https://urldefense.com/v3/__https://ncss-tech.github.io/soilDB/__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1muuxEa_w$ ) and associated tutorials contain detailed explanations of this functionality. 
+The [{soilDB} documentation](https://urldefense.com/v3/__https://ncss-tech.github.io/soilDB/__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV-N_qU8yA$ ) and associated tutorials contain detailed explanations of this functionality. 
 
-  * [Soil Data Access (SDA) Tutorial](https://urldefense.com/v3/__http://ncss-tech.github.io/AQP/soilDB/SDA-tutorial.html__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1lfNDQ8fA$ )
-  * [SDA Point Query Examples](https://urldefense.com/v3/__https://ncss-tech.github.io/AQP/soilDB/SDA-point-query.html__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1kpuYOk6Q$ )
-  * [NCSS Lab Data via SDA](https://urldefense.com/v3/__https://ncss-tech.github.io/lab-data-delivery/SDA.html__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1n3SxhhcQ$ )
-  * [WCS vignette](https://urldefense.com/v3/__https://ncss-tech.github.io/soilDB/articles/wcs-ssurgo.html__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1nASRV7QA$ )
-  * [Expanded WCS Demonstration](https://urldefense.com/v3/__http://ncss-tech.github.io/AQP/soilDB/WCS-demonstration-01.html__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1lmvrPf5A$ )
+  * [Soil Data Access (SDA) Tutorial](https://urldefense.com/v3/__http://ncss-tech.github.io/AQP/soilDB/SDA-tutorial.html__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV-bDUR2KA$ )
+  * [SDA Point Query Examples](https://urldefense.com/v3/__https://ncss-tech.github.io/AQP/soilDB/SDA-point-query.html__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV-vahN5Ow$ )
+  * [NCSS Lab Data via SDA](https://urldefense.com/v3/__https://ncss-tech.github.io/lab-data-delivery/SDA.html__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV-7_6n_GQ$ )
+  * [WCS vignette](https://urldefense.com/v3/__https://ncss-tech.github.io/soilDB/articles/wcs-ssurgo.html__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV88J6wsYQ$ )
+  * [Expanded WCS Demonstration](https://urldefense.com/v3/__http://ncss-tech.github.io/AQP/soilDB/WCS-demonstration-01.html__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV8MIf7b7A$ )
 
 
 ## Soil Mapping Units
-U.S. soil survey data (SSURGO) are organized by "map unit", representing a collection of one or more soils and/or miscellaneous areas (e.g. "mined land") that are delineated at a cartographic scale of approximately 1:24,000. The collection of distinct soils and miscellaneous areas within a map unit are referred to as "components". When possible, components are aligned to geomorphic features or facets of a landform such as summits, side slopes, water collecting areas, or along an active stream channel. Components are typically named for a soil series, for example [Cecil](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/sde/?series=cecil*osd__;Iw!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1lMqmPaEA$ ), [Pacolet](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/sde/?series=pacolet*osd__;Iw!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1lOe7lEpQ$ ), [Gaston](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/sde/?series=gaston*osd__;Iw!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1mlUJabvw$ ), and [Winnsboro](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/sde/?series=winnsboro*osd__;Iw!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1kPKRx_kw$ ) in the block diagram^[Block diagrams and stratigraphic cross-sections are routinely used to explain soil-landscape relationships. You can explore a collection of digitized block diagrams for the Cecil soil series (and others) at [SoilWeb Series Data Explorer](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/sde/?series=cecil*block-diagrams__;Iw!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1kC1rnN3w$ ).] below.
+U.S. soil survey data (SSURGO) are organized by "map unit", representing a collection of one or more soils and/or miscellaneous areas (e.g. "mined land") that are delineated at a cartographic scale of approximately 1:24,000. The collection of distinct soils and miscellaneous areas within a map unit are referred to as "components". When possible, components are aligned to geomorphic features or facets of a landform such as summits, side slopes, water collecting areas, or along an active stream channel. Components are typically named for a soil series, for example [Cecil](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/sde/?series=cecil*osd__;Iw!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV-A5UdfJw$ ), [Pacolet](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/sde/?series=pacolet*osd__;Iw!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV-tYxmAng$ ), [Gaston](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/sde/?series=gaston*osd__;Iw!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV984V13nA$ ), and [Winnsboro](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/sde/?series=winnsboro*osd__;Iw!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV8GjnEeKQ$ ) in the block diagram^[Block diagrams and stratigraphic cross-sections are routinely used to explain soil-landscape relationships. You can explore a collection of digitized block diagrams for the Cecil soil series (and others) at [SoilWeb Series Data Explorer](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/sde/?series=cecil*block-diagrams__;Iw!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV9aEtRokg$ ).] below.
 
 ![Relationship of soils and parent material in the Gaston-Pacolet-Cecil general soil map unit (Soil Survey of Lincoln County, North Carolina; January 1995).](NC-2012-02-07-28.png){fig-align="center" fig-alt="Soil survey block diagram, illustrating the connection between soil type and geomorphic context."}
 
-![Components associated with the [*Clarno-Crossplain-Davison complex, 0 to 2 percent slopes*](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/soil_web/list_components.php?mukey=418254__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1kAzBGeAw$ ) SSURGO map unit. Note component names, percentages, and links to geomorphic features such as ground moraines, drainage ways, depressions, and swales.](mu-example-SoilWeb.png){fig-align="center" fig-alt="A screen-shot from SoilWeb illustrating the components associated with the *Clarno-Crossplain-Davison complex, 0 to 2 percent slopes* map unit. Component names, percentages, and geomorphic association are some of the most useful details."}
+![Components associated with the [*Clarno-Crossplain-Davison complex, 0 to 2 percent slopes*](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/soil_web/list_components.php?mukey=418254__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV8SwTyLpA$ ) SSURGO map unit. Note component names, percentages, and links to geomorphic features such as ground moraines, drainage ways, depressions, and swales.](mu-example-SoilWeb.png){fig-align="center" fig-alt="A screen-shot from SoilWeb illustrating the components associated with the *Clarno-Crossplain-Davison complex, 0 to 2 percent slopes* map unit. Component names, percentages, and geomorphic association are some of the most useful details."}
 
 
-See this excellent [presentation by James Brewer](https://urldefense.com/v3/__https://clctrust.org/wp-content/uploads/2022/01/USDA-What-are-Soil-Map-Units-and-a-Web-Soil-Survey.pdf__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1lKtb1y8w$ ) for a detailed description of soil survey map units and their interpretation. The [Ag Data Commons entry for SSURGO](https://urldefense.com/v3/__https://data.nal.usda.gov/dataset/soil-survey-geographic-database-ssurgo__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1nPd9u6ag$ ) contains additional useful links and metadata. A detailed background on soil mapping concepts can be found in [Chapter 4 of the Soil Survey Manual](https://urldefense.com/v3/__https://www.nrcs.usda.gov/sites/default/files/2022-09/SSM-ch4.pdf__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1keDTJ_FA$ ).
+See this excellent [presentation by James Brewer](https://urldefense.com/v3/__https://clctrust.org/wp-content/uploads/2022/01/USDA-What-are-Soil-Map-Units-and-a-Web-Soil-Survey.pdf__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV_jIE1NCw$ ) for a detailed description of soil survey map units and their interpretation. The [Ag Data Commons entry for SSURGO](https://urldefense.com/v3/__https://data.nal.usda.gov/dataset/soil-survey-geographic-database-ssurgo__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV9h-3TdnQ$ ) contains additional useful links and metadata. A detailed background on soil mapping concepts can be found in [Chapter 4 of the Soil Survey Manual](https://urldefense.com/v3/__https://www.nrcs.usda.gov/sites/default/files/2022-09/SSM-ch4.pdf__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV8-MNyuMw$ ).
 
 
 ## Data Aggregation
@@ -310,7 +310,7 @@ ORDER BY mukey, comppct_r DESC, hztop ASC;
 
 
 # Worked Examples
-Follow-along several fully-worked examples, from [St. Charles County, Missouri](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/gmap/?loc=38.89624,-90.42109,z14__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1mU2QGaTA$ ). Continue from above, with required libraries installed / loaded and custom functions sourced.
+Follow-along several fully-worked examples, from [St. Charles County, Missouri](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/gmap/?loc=38.89624,-90.42109,z14__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV-Lkl-Kdg$ ). Continue from above, with required libraries installed / loaded and custom functions sourced.
 
 ![Detailed soil survey map unit delineations (yellow polygons) from St. Charles County, MO. This is the SoilWeb interface to soil survey data.](soilweb-screen-shot.jpg){fig-align="center" fig-alt="A screen shot from SoilWeb, demonstrating soil map unit delineations overlaid on aerial imagery."}
 
@@ -489,7 +489,7 @@ title('SOC Stock 0-100cm (kg/sq.m)')
 
 
 ## Area of Interest
-Re-visit examples and concepts presented above, this time for an area of interest (AOI) defined by rectangular polygon specified in well known text (WKT) format. You can generate AOI polygon coordinates from [SoilWeb](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/gmap/?loc=38.89624,-90.42109,z14__;!!JYXjzlvb!kr1SOhoeLpmbiwO9dFrh2Z3eemgMrVLbFblopn5vvim3zhTMUHA2D91wUARPZuU2mDcfPeSvwKPW2k1SLbiN-3k1J1mU2QGaTA$ ) by pressing the 'b' key after zooming/panning to an area of interest.
+Re-visit examples and concepts presented above, this time for an area of interest (AOI) defined by rectangular polygon specified in well known text (WKT) format. You can generate AOI polygon coordinates from [SoilWeb](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/gmap/?loc=38.89624,-90.42109,z14__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV-Lkl-Kdg$ ) by pressing the 'b' key after zooming/panning to an area of interest.
 ```{r}
 #| fig-width: 10
 #| fig-height: 6
@@ -530,17 +530,66 @@ plot(cstock, axes = FALSE, col = hcl.colors(50, palette = 'spectral'), main = 'S
 ```
 
 
-<!-- ```{r} -->
-<!-- #| fig-width: 11 -->
-<!-- #| fig-height: 6 -->
-<!-- #| warning: false -->
-<!-- #| message: false -->
-<!-- #| results: hide -->
+# Some Notes on Aggregated Soil Data
 
-<!-- .v <- spatSample(cstock, size = 1000, method = 'regular', as.df = FALSE)[, 1] -->
-<!-- histogram(.v, par.settings = tactile.theme()) -->
+The spatial and tabular data delivered via [Web Soil Survey](https://urldefense.com/v3/__https://websoilsurvey.nrcs.usda.gov/app/__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV--zia3lQ$ ) and [SoilWeb](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/gmap/__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV9EJtGQuQ$ ) are referred to as aggregated data. This type of soil data relies on extensive field investigation, point data, and tacit models of “soil landscape relationships” to build a continuous fabric of soil geography. The level of generalization for any given area (“soil survey order” or “level of investigation”) is dependent on expected land use decisions (e.g. intensive farming vs. rangeland) and available resources (staff and time). The order of mapping gives an indication of how collections of soils are grouped within a soil mapping unit (e.g. conceptual generalization) and an approximate minimum mapping unit (e.g. spatial generalization). See [chapter 4 of the Soil Survey Manual](https://urldefense.com/v3/__https://www.nrcs.usda.gov/sites/default/files/2022-09/SSM-ch4.pdf__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV8-MNyuMw$ ) for a much more detailed accounting of survey order. Aggregate soil survey data, unlike point data, is far more complete in terms of space and available data elements, and covers most of the United States. However, the spatial and conceptual generalization of these data can be too coarse to resolve fine details within small areas (<2-10 acres, depending on survey order).
 
-<!-- ``` -->
+Lets develop a thematic map depicting the "level of investigation" for soil map units within an [area of interest centered on Sequoia-Kings Canyon National Park, CA](https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/gmap/?loc=36.51233,-118.59492,z13__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV9DmyQ15w$ ). This approach uses both gridded and vector representations of the same, [detailed soil survey data](https://urldefense.com/v3/__https://www.nrcs.usda.gov/resources/data-and-reports/soil-survey-geographic-database-ssurgo__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV_FZgPBRw$ ).
+```{r}
+#| fig-width: 10
+#| fig-height: 6
+#| fig-align: center
+#| fig-cap-location: margin
+#| fig-cap: "A thematic map of *investigation intensity* for an area of interest centered on Sequoia-Kings Canyon National Park, CA. The most detailed mapping (Order 2) was performed in and around meadows and some riparian areas. The least detailed mapping (Order 4) was performed in high-elevation talus fields and alpine features."
+#| warning: false
+#| message: false
+#| results: hide
+
+# approximate AOI used here
+# https://urldefense.com/v3/__https://casoilresource.lawr.ucdavis.edu/gmap/?loc=36.51233,-118.59492,z13__;!!JYXjzlvb!hiynmqR5TKp7xjWcLqDmxj4baE6nDTUGJFsM7M1797tOZgS4ziUu12XbfOk7akDGDCGXiYwcB1x_WFfKyJCAsNhTxV9DmyQ15w$ 
+
+# make a bounding box and assign a CRS (4326: GCS, WGS84)
+a <- vect('POLYGON((-118.7220 36.4500,-118.7220 36.5746,-118.4678 36.5746,-118.4678 36.4500,-118.7220 36.4500))', crs = 'epsg:4326')
+
+# fetch gSSURGO map unit keys at native resolution (30m)
+mu <- mukey.wcs(aoi = a, db = 'gssurgo')
+
+# extract RAT for thematic mapping
+rat <- cats(mu)[[1]]
+
+# create a query for investigation intensite, by map unit key
+.sql <- sprintf(
+  "SELECT mukey, invesintens FROM mapunit WHERE mukey IN %s ;", 
+  format_SQL_in_statement(as.integer(rat$mukey))
+)
+
+# send / process query
+tab <- SDA_query(.sql)
+
+# LEFT join RAT + data from SDA
+rat <- merge(rat, tab, by = 'mukey', all.x = TRUE, sort = FALSE)
+
+# check frequency of investigation intensity
+table(rat$invesintens)
+
+# re-pack rat
+levels(mu) <- rat
+
+# get intersecting SSURGO polygons from SDA
+# result is a SpatVector object, GCS WGS84
+p <- SDA_spatialQuery(mu, what = 'mupolygon', geomIntersection = TRUE)
+
+# transform to coordinate reference system used by gSSURGO / gNATSGO grids
+# EPSG:5070
+p <- project(p, crs(mu))
+
+# enable thematic mapping using 'invesintens' column from RAT
+activeCat(mu) <- 'invesintens'
+
+# simple thematic map
+plot(mu, axes = FALSE, col = hcl.colors(n = 4, palette = 'spectral'), mar = c(0.25, 0.25, 2, 6), plg = list(cex = 1.5), main = 'Investigation Intensity')
+lines(p, lwd = 0.5)
+```
 
 
 
