@@ -7,9 +7,19 @@ sidebar: false
 search: false
 ---
 
+
+## Congratulations to All Participants! 
+
+Each team brought a fresh approach to the challenge of how to estimate soil carbon across a landscape.
+
+![](images/participants.jpeg)
+
+***Pictured left to right:*** *Igor Kuivjogi Fernandes, Gustavo Henrique Bessa de Lima, Amrinder Jakhar, Mario Andres Soto Valencia, Diego Della Lunga, Anish Bhattarai, Binita Ghimire, Skye Brugler, Rajneesh Sharma, Shailesh Pandit, Srinadh Kodali.* ***Not pictured:*** *Harpreet Kaur. *
+
 ::: {.header-block}
 
-Congratulations to the winners of the Ag Hackathon!
+## Congratulations to the winners of the Ag Hackathon!
+<br>
 
 ##### 1st place:  Uncommon
 
@@ -28,10 +38,6 @@ Anish Bhattarai*
 ##### 3rd place:  Free Agents
 
 *Harpreet Kaur*
-
-![](images/participants.JPEG)
-
-***Pictured left to right:*** *Igor Kuivjogi Fernandes, Gustavo Henrique Bessa de Lima, Amrinder Jakhar, Mario Andres Soto Valencia, Diego Della Lunga, Anish Bhattarai, Binita Ghimire, Skye Brugler, Rajneesh Sharma, Shailesh Pandit, Srinadh Kodali.* ***Not pictured:*** *Harpreet Kaur. *
 
 
 :::
