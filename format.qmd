@@ -1,0 +1,23 @@
+
+---
+pagetitle: Format
+title: Format for the Hackathon
+subtitle: "How it all works"
+search: false
+---
+
+
+::: {.header-block}
+
+### Format
+
+The Hackathon topic will be announced September 04. That week, we will hold a series of webinars on how to access and retrieve data from public databases relevant to the Hackathon topic. We will provide one opportunity for teams to meet in person at the Annual Meetings and work. Outside of this, teams can meet and work as much as each chooses to. Students may participate as virtual attendees, but every team member must register for the meetings. Teams will present their findings on the last day of the conference in a 15-minute presentation and will be judged according to a [rubric](rubric.qmd). You can view the full schedule [here](schedule.qmd). 
+
+:::
+
+
+### Who Can Compete? 
+
+As mentioned, this is a team competition for graduate students. You’re welcome to apply as a team or as a “free agent” in which we will place you in a team. We welcome students of all domains, abilities and levels of expertise. Hackathon participants are not expected to have knowledge in a specific programming language or a particular subject matter. Building a balanced team with regard to domain knowledge is recommended, as well as including team member(s) with analytical capabilities (e.g. statistics, machine learning, deep learning). There is room in the competition for people of all abilities, skill sets and agricultural research disciplines. 
+
+

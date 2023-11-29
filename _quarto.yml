@@ -31,6 +31,8 @@ website:
         href: resources.qmd
       - text: "Competition"
         menu: 
+        - text: "Competition Format"
+          href: format.qmd
         - text: "Schedule"
           href: schedule.qmd
         - text: "Rules"
